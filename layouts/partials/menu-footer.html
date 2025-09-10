@@ -1,0 +1,23 @@
+<left>
+  <br />
+  <br />
+  <b> Last Updated </b> <br />
+  {{/* Prefer page lastmod, fallback to site last change if available, then to page date, else now */}}
+  {{ $format := .Site.Params.lastUpdateFormat | default "02-01-2006" }}
+  {{ $date := cond (not (eq .Lastmod.Unix 0)) .Lastmod (cond (not (eq .Date.Unix 0)) .Date now) }}
+  <i><p style="color: orange">{{ $date.Format $format }}</p></i>
+</left>
+<left>
+  <br />
+  <br />
+  <b> Prepared by </b> <br />
+
+  <i>
+    <a href="https://www.linkedin.com/in/sutrinh/" style="color: orange"
+      >Nguyễn Thế Minh
+    </a>
+    <br />
+  </i>
+</left>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
