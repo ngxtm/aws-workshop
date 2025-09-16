@@ -1,6 +1,7 @@
 ---
 title : "Session Management"
-date :  2025-09-10 
+date :  2025-01-15 
+lastmod : 2025-01-15
 weight : 1 
 chapter : false
 ---
