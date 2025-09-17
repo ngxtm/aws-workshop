@@ -1,5 +1,5 @@
 ---
-title : "Session Management"
+title : "Internship Report"
 date :  2025-09-10 
 weight : 1 
 chapter : false
