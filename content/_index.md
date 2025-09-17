@@ -1,22 +1,25 @@
 ---
 title : "Session Management"
-date :  2025-01-15 
+date :  2025-09-10 
 weight : 1 
 chapter : false
 ---
-# Working with Amazon System Manager - Session Manager
+# INTERNSHIP REPORT
 
-### Overview
+## Student Information
 
- In this lab, you will learn the basic concepts and hands-on practice with Amazon System Manager - Session Management. Practice creating connections to public and private servers in the VPC.
+**Full Name:** Nguyễn Thế Minh <br>
+**Phone Number:** 0888789001 <br>
+**Email**: nguyenminh110505@gmail.com <br>
+**University:** FPT University Ho Chi Minh Campus <br>
+**Major:** Software Engineer <br>
+**Class:** AWS082025 <br>
+**Internship Company:** Amazon Web Services Vietnam Co., Ltd. <br>
+**Internship Position:** FCJ Cloud Intern <br>
+**Internship Duration:** From 12/08/2025 to 12/11/2025 <br>
 
-![ConnectPrivate](/images/arc-log.png) 
+![Avatar](/images/Avatar.jpg)
 
 ### Contents
 
- 1. [Introduction](1-introduce/)
- 2. [Prerequisites](2-Prerequiste/)
- 3. [Create connections to EC2 instances](3-Accessibilitytoinstance/)
- 4. [Manage session logs](4-s3log/)
- 5. [Port Forwarding](5-Portfwd/)
- 6. [Clean up resources](6-cleanup/)
+ 1. [Worklog](1-Worklog/)
