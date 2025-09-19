@@ -23,3 +23,9 @@ chapter : false
 ### Contents
 
  1. [Worklog](1-Worklog/)
+ 2. [Proposal]
+ 3. [Translated Blogs]
+ 4. [Event Participated](4-Event-Participated/)
+ 5. [Workshop]
+ 6. [Self-Assessment]
+ 7. [Sharing and Feedback]
