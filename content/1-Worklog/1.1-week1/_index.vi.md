@@ -6,8 +6,12 @@ chapter : false
 pre : " <b> 1.1 </b> "
 ---
 ### Mục tiêu tuần 1:
-- Học 
-- Thực hành
+- **Tạo tài khoản AWS** và làm quen với các dịch vụ cơ bản
+- **Hoàn thành Module 01-02**: Leadership Principles, Global Infrastructure, Management Tools
+- **Quản lý chi phí AWS**: AWS Budgets, Cost Optimization, Support Plans
+- **Học VPC & Networking**: VPC, Subnet, Security Groups, Load Balancers
+- **Thực hành hands-on**: Tạo VPC, EC2, NAT Gateway, VPC Peering
+- **Nghiên cứu bổ sung**: Well Architecture Framework, Advanced Networking
 
 ### Nhiệm vụ cần thực hiện trong tuần này
 
@@ -22,3 +26,96 @@ pre : " <b> 1.1 </b> "
 | CN | - Ôn tập và làm lại các bước setup EC2,..<br>- Mục đích, sử dụng, thực hành với project cá nhân:<br> + Auto scaling group + Load Balancer<br> + EC2 + S3 | 13/09/2025 | 13/09/2025 | [FCJ Study Web](https://cloudjourney.awsstudygroup.com)<br>[Youtube First Cloud Journey](https://www.youtube.com/watch?v=AQlsd0nWdZk&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=1) |
 
 <!-- End of table -->
+
+### Kết quả đạt được tuần 1:
+
+#### **AWS Fundamentals & Global Infrastructure**
+- **AWS Leadership Principles**: Hiểu được 16 nguyên tắc lãnh đạo của AWS, đặc biệt là "Customer Obsession" và "The top for 13 consecutive years"
+- **AWS Global Infrastructure**:
+  - **Availability Zone (AZ)**: Chứa một hoặc nhiều data center, cung cấp fault isolation, nên deploy app trên 2 AZ
+  - **Region**: Tối thiểu 3 AZ trong mỗi region
+  - **Edge Location**: 
+    - CloudFront (CDN)
+    - Web Application Firewall (WAF) 
+    - Route 53 (DNS Service)
+- **AWS Management Tools**:
+  - AWS Management Console (Service Search, Support Center, CLI)
+  - AWS SDK (Quản lý credential, retry, data marshalling, serialization, deserialization)
+- **Nghiên cứu bổ sung**: Well Architecture Framework
+
+#### **Cost Management & Support**
+- **Cost Optimization Strategies**:
+  - Chọn cấu hình phù hợp, sử dụng saving plans, reserved instances, spot instances
+  - Thiết kế kiến trúc tối ưu, setup AWS Budget
+  - Quản lý chi phí theo phòng ban với cost allocation tags
+- **AWS Budgets**:
+  - Tạo budget định kỳ để duy trì monitoring liên tục
+  - Cấu hình multiple alert thresholds (50%, 80%, 90%, 100%)
+  - Sử dụng actual và forecasted alerts
+  - Filtering by tags để track costs theo project/department
+  - Tạo Cost Budget và Usage Budget (account phải active > 1 tháng)
+- **Saving Plans**:
+  - Budget chỉ track total saving plan, không phải per plan
+  - Best practice: Cost Explorer → Reports → SP Utilization/Coverage → filter
+- **AWS Support Plans**:
+  - **Basic**: 24/7 access, best practices, building block architecture support
+  - **Business**: Use-case specific guidance, AWS Trusted Advisor, third-party software support
+  - **Enterprise**: Software architecture guide, Infrastructure Event Management, TAM, prioritized support
+- **Support Request Types**: Account/Billing, Service Limit Increase, Technical Support
+
+#### **VPC & Networking Fundamentals**
+- **VPC (Virtual Private Cloud)**:
+  - Nằm trong 1 region, cần khai báo CIDR IPv4 (bắt buộc)
+  - Giới hạn: 5 VPC/region/account
+  - Mục đích: Phân tách môi trường (Production/Dev/Test/Staging)
+  - Mỗi subnet giữ lại 5 IP: Network, broadcast, router, DNS, future features
+  - Mỗi subnet chỉ nằm trong 1 AZ
+  - **Subnet Types**: Public (truyền dữ liệu bên ngoài), Private (truyền dữ liệu nội bộ)
+- **Network Components**:
+  - **ENI Components**: EIP, MAC, Private IP Address
+  - **VPC Endpoints**: Interface endpoint, Gateway endpoint
+  - **Internet Connectivity**: Internet Gateway + Public IP + Route Table mapping
+  - **NAT Gateway**: Cho phép private subnet giao tiếp ra ngoài (outbound only), không cho phép inbound trực tiếp
+- **Security & Monitoring**:
+  - **Security Groups**: Stateful, chỉ allow rules, áp dụng lên ENI, mặc định chặn inbound, cho phép outbound
+  - **NACL (Network Access Control List)**: Stateless, áp dụng lên subnets, rule đọc từ trên xuống dưới
+  - **VPC Flow Logs**: Monitor IP traffic, lưu trên S3 hoặc CloudWatch Logs
+- **Load Balancers**:
+  - **ALB**: Layer 7, path-based routing, HTTP/HTTPS, routing ngoài VPC
+  - **NLB**: Layer 4, auto-scale, IP tĩnh, hiệu năng cao (triệu requests/giây)
+  - **Classic LB**: Layer 4&7, chi phí cao, ít sử dụng
+  - **Gateway LB**: Layer 3, forward to virtual appliances
+
+#### **Advanced Networking & Connectivity**
+- **VPC Peering & Transit Gateway**:
+  - **VPC Peering**: 1:1 connection, không hỗ trợ transitive routing, cần cấu hình route tables
+  - **Transit Gateway**: Hub trung tâm kết nối multiple VPCs, tạo TGW, attachments, route tables
+- **VPN & Direct Connect**:
+  - **VPN Site-to-Site, VPN Client-to-Site**: Khuyến khích sử dụng bên thứ 3 từ AWS Marketplace
+  - **AWS Direct Connect**: Đường truyền ổn định, Hosted Connection có thể cấu hình băng thông tùy chỉnh
+- **Hybrid DNS**: Outbound/inbound endpoints, S3 resolver rules
+
+#### **Thực hành & Hands-on Labs**
+- **VPC Setup & Configuration**:
+  - Tạo VPC, Subnet, Internet Gateway, Route Table
+  - Cấu hình Security Groups, NACL
+  - Bật VPC Flow Logs
+  - Tạo EC2 Server, NAT Gateway
+  - Sử dụng Reachability Analyzer
+- **Session Manager**: Tạo kết nối EC2, quản lý session logs, Port Forwarding
+- **Auto Scaling Group + ALB**: Thực hành chi tiết
+- **Key-pair Management**: Để lấy password administrator và SSH vào EC2
+
+#### **Nghiên cứu bổ sung**
+- **Advanced Networking - Specialty Study Guide**: Chuẩn bị cho AWS Advanced Networking - Specialty exam
+- **Well Architecture Framework**: Best practices cho AWS architecture
+- **Cost Management**: AWS Budgets, Cost Explorer, cost optimization strategies
+
+#### **Kỹ năng thực hành đạt được**
+- Tạo và cấu hình VPC hoàn chỉnh
+- Thiết lập networking components (IGW, NAT, Route Tables)
+- Cấu hình security (Security Groups, NACL)
+- Thực hành VPC Peering và Transit Gateway
+- Sử dụng AWS Management Console và CLI
+- Quản lý chi phí với AWS Budgets
+- Hiểu rõ các loại Load Balancer và use cases
