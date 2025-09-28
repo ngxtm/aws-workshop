@@ -9,7 +9,6 @@ pre : " <b> 1.3 </b> "
 ### Mục tiêu tuần 3:
 
 ### Nhiệm vụ cần thực hiện trong tuần này:
-<!-- Table Content -->
 
 | Thứ | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |---|---|---|---|---|
@@ -21,5 +20,4 @@ pre : " <b> 1.3 </b> "
 | 7 |  | 27/09/2025 | 27/09/2025 | [FCJ Study Web](https://cloudjourney.awsstudygroup.com)<br>[Youtube First Cloud Journey](https://www.youtube.com/watch?v=AQlsd0nWdZk&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=1) |
 | CN |  | 28/09/2025 | 28/09/2025 | [FCJ Study Web](https://cloudjourney.awsstudygroup.com)<br>[Youtube First Cloud Journey](https://www.youtube.com/watch?v=AQlsd0nWdZk&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=1) |
 
-<!-- End of table -->
 ### Kết quả đạt được tuần 3:
