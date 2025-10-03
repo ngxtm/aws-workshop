@@ -1,9 +1,10 @@
 ---
-title : "Báo cáo thực tập"
-date :  2025-09-10 
-weight : 1 
-chapter : false
+title: "Báo cáo thực tập"
+date: 2025-09-10
+weight: 1
+chapter: false
 ---
+
 # BÁO CÁO THỰC TẬP
 
 ## Thông tin sinh viên
@@ -22,4 +23,10 @@ chapter : false
 
 ### Nội dung
 
- 1. [Nhật ký công việc](1-Worklog/)
+1.  [Nhật ký công việc](1-Worklog/)
+2.  [Đề xuất](2-Proposal/)
+3.  [Bài dịch](3-Translated-Blogs/)
+4.  [Sự kiện đã tham gia](4-Event-Participated/)
+5.  [Workshop](5-Workshop/)
+6.  [Tự đánh giá](6-Self-Assessment/)
+7.  [Chia sẻ và phản hồi](7-Sharing-And-Feedback/)
