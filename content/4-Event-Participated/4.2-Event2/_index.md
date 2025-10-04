@@ -1,6 +1,6 @@
 ---
 title : "Event 2"
-date :  2025-09-25
+date :  2025-10-03
 weight : 5
 chapter : false
 pre : " <b> 4.2 </b> "
@@ -10,15 +10,26 @@ pre : " <b> 4.2 </b> "
 
 ### Event Information
 &emsp; **Event Name:** AWS GenAI Builder Club - AI-Driven Development Life Cycle: Reimagining Software Engineering <br>
-&emsp; **Date & Time:** September 25, 2025 <br>
-&emsp; **Location:** Online/Virtual Event <br>
-&emsp; **Role:** Participant <br>
-&emsp; **Main Theme:** AI-Driven Development Methodology and AI-Native Software Engineering <br>
+&emsp; **Date & Time:** 2:00 PM, Friday, October 3rd, 2025 <br>
+&emsp; **Location:** AWS Event Hall, L26 Bitexco Tower, Ho Chi Minh City <br>
+&emsp; **Instructors:** Toan Huynh & My Nguyen <br>
+&emsp; **Coordinators:** Diem My, Dai Truong, Dinh Nguyen <br>
+&emsp; **Role:** Attendee <br>
+&emsp; **Main Theme:** AI-Driven Development using Amazon Q Developer and Kiro <br>
+
+### Event Schedule
+&emsp; **2:00 PM - 2:15 PM:** Welcome and Introduction <br>
+&emsp; **2:15 PM - 3:30 PM:** AI-Driven Development Life Cycle Overview and Amazon Q Developer Demonstration (by Toan Huynh) <br>
+&emsp; **3:30 PM - 3:45 PM:** Break <br>
+&emsp; **3:45 PM - 4:30 PM:** Kiro Demonstration (by My Nguyen) <br>
 
 ### Event Overview
-This event was organized by AWS GenAI Builder Club to introduce and discuss a revolutionary new methodology in software development that places Artificial Intelligence at the center of the development process. The session was divided into two main sections: the first focused on AI-Driven Development Lifecycle (AI-DLC) methodology and optimization strategies, while the second introduced Kiro, an advanced AI-powered IDE that transforms natural language into code, documentation, and tests.
+This event was organized by AWS GenAI Builder Club to introduce and demonstrate AI-Driven Development using Amazon Q Developer and Kiro. Held at the AWS Event Hall on the 26th floor of Bitexco Tower, the session brought together developers and technology enthusiasts to explore how AI is transforming the software development lifecycle. The event was expertly led by Toan Huynh and My Nguyen, with excellent coordination by Diem My, Dai Truong, and Dinh Nguyen.
 
-### Session 1: AI-Driven Development Lifecycle (AI-DLC) - Details and Optimization
+The session was structured into two main parts: the first 75 minutes focused on AI-Driven Development Lifecycle (AI-DLC) methodology with hands-on Amazon Q Developer demonstrations, followed by a 15-minute break, and concluded with a 45-minute deep-dive into Kiro's capabilities.
+
+### Session 1: AI-Driven Development Lifecycle and Amazon Q Developer (2:15 PM - 3:30 PM)
+**Instructor: Toan Huynh**
 
 #### Introduction to AI-DLC Methodology
 **What is AI-DLC?**
@@ -100,7 +111,8 @@ This event was organized by AWS GenAI Builder Club to introduce and discuss a re
 - Training and upskilling team members
 - Establish clear guidelines for AI usage and validation
 
-### Session 2: Kiro - AI-Powered Development Environment
+### Session 2: Kiro - AI-Powered Development Environment (3:45 PM - 4:30 PM)
+**Instructor: My Nguyen**
 
 #### Introduction to Kiro
 **What is Kiro?**

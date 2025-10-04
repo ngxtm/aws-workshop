@@ -1,6 +1,6 @@
 ---
 title : "Sự kiện 2"
-date :  2025-09-25
+date :  2025-10-03
 weight : 5
 chapter : false
 pre : " <b> 4.2 </b> "
@@ -10,15 +10,26 @@ pre : " <b> 4.2 </b> "
 
 ### Thông tin Sự kiện
 &emsp; **Tên sự kiện:** AWS GenAI Builder Club - AI-Driven Development Life Cycle: Reimagining Software Engineering <br>
-&emsp; **Ngày & Giờ:** 25 tháng 9 năm 2025 <br>
-&emsp; **Địa điểm:** Sự kiện Trực tuyến/Online <br>
-&emsp; **Vai trò:** Người tham gia <br>
-&emsp; **Chủ đề chính:** Phương pháp Phát triển Hướng AI và Kỹ thuật Phần mềm AI-Native <br>
+&emsp; **Ngày & Giờ:** 2:00 PM, Thứ Sáu, ngày 3 tháng 10 năm 2025 <br>
+&emsp; **Địa điểm:** AWS Event Hall, Tầng 26 Tòa nhà Bitexco, Thành phố Hồ Chí Minh <br>
+&emsp; **Giảng viên:** Toan Huynh & My Nguyen <br>
+&emsp; **Điều phối viên:** Diem My, Dai Truong, Dinh Nguyen <br>
+&emsp; **Vai trò:** Người tham dự <br>
+&emsp; **Chủ đề chính:** Phát triển Hướng AI sử dụng Amazon Q Developer và Kiro <br>
+
+### Lịch trình Sự kiện
+&emsp; **2:00 PM - 2:15 PM:** Chào mừng và Giới thiệu <br>
+&emsp; **2:15 PM - 3:30 PM:** Tổng quan Chu trình Phát triển Hướng AI và Demo Amazon Q Developer (bởi Toan Huynh) <br>
+&emsp; **3:30 PM - 3:45 PM:** Giải lao <br>
+&emsp; **3:45 PM - 4:30 PM:** Demo Kiro (bởi My Nguyen) <br>
 
 ### Tổng quan Sự kiện
-Sự kiện này được tổ chức bởi AWS GenAI Builder Club nhằm giới thiệu và thảo luận về phương pháp luận mới mang tính cách mạng trong phát triển phần mềm, đặt Trí tuệ Nhân tạo (AI) vào trung tâm của quy trình phát triển. Buổi học được chia thành hai phần chính: phần đầu tập trung vào phương pháp luận Chu trình Phát triển Hướng AI (AI-DLC) và các chiến lược tối ưu hóa, trong khi phần thứ hai giới thiệu Kiro, một IDE tiên tiến được hỗ trợ bởi AI có khả năng chuyển đổi ngôn ngữ tự nhiên thành mã nguồn, tài liệu và kiểm thử.
+Sự kiện này được tổ chức bởi AWS GenAI Builder Club nhằm giới thiệu và trình diễn Phát triển Hướng AI sử dụng Amazon Q Developer và Kiro. Được tổ chức tại AWS Event Hall trên tầng 26 của Tòa nhà Bitexco, buổi học đã quy tụ các nhà phát triển và những người đam mê công nghệ để khám phá cách AI đang chuyển đổi chu trình phát triển phần mềm. Sự kiện được dẫn dắt chuyên nghiệp bởi Toan Huynh và My Nguyen, với sự điều phối xuất sắc từ Diem My, Dai Truong và Dinh Nguyen.
 
-### Phần 1: Chu trình Phát triển Hướng AI (AI-DLC) - Chi tiết và Tối ưu hóa
+Buổi học được cấu trúc thành hai phần chính: 75 phút đầu tập trung vào phương pháp luận Chu trình Phát triển Hướng AI (AI-DLC) với các demo thực hành về Amazon Q Developer, sau đó là 15 phút giải lao, và kết thúc với 45 phút tìm hiểu sâu về khả năng của Kiro.
+
+### Phần 1: Chu trình Phát triển Hướng AI và Amazon Q Developer (2:15 PM - 3:30 PM)
+**Giảng viên: Toan Huynh**
 
 #### Giới thiệu về Phương pháp luận AI-DLC
 **AI-DLC là gì?**
@@ -100,7 +111,8 @@ Sự kiện này được tổ chức bởi AWS GenAI Builder Club nhằm giới
 - Đào tạo và nâng cao kỹ năng cho các thành viên nhóm
 - Thiết lập hướng dẫn rõ ràng cho việc sử dụng và xác thực AI
 
-### Phần 2: Kiro - Môi trường Phát triển được Hỗ trợ bởi AI
+### Phần 2: Kiro - Môi trường Phát triển được Hỗ trợ bởi AI (3:45 PM - 4:30 PM)
+**Giảng viên: My Nguyen**
 
 #### Giới thiệu về Kiro
 **Kiro là gì?**
