@@ -113,8 +113,9 @@ The selected startups are:
 
 For more information about the AWS Space Accelerator and the selected startups, visit this webpage.
 
-**TAGS:** aerospace & satellite, Asia Pacific, AWS Public Sector, AWS Public Sector Partners
+**TAGS:** [aerospace & satellite](https://aws.amazon.com/blogs/publicsector/tag/aerospace-satellite/), [Asia Pacific](https://aws.amazon.com/blogs/publicsector/tag/asia-pacific/), [AWS Public Sector](https://aws.amazon.com/blogs/publicsector/tag/aws-public-sector/), [AWS Public Sector Partners](https://aws.amazon.com/blogs/publicsector/tag/aws-public-sector-partners/)
 
-**David Freeman**  
-David Freeman  
+![David Freeman](/images/translated-blogs/blog3/pro5-1.jpg)
+**David Freeman** 
+
 David is a principal partner sales manager on the aerospace and satellite team at AWS, supporting space industry growth with AWS Partners and customers across Asia Pacific and Japan (APJ).
