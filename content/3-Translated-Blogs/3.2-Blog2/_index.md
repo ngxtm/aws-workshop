@@ -24,12 +24,8 @@ The Wiz's CNAPP offering provides:
 * High fidelity threat detection for active cyber defense, with the ability to trace from runtime events back to exact lines of code to accelerate root cause analysis and remediation.
 
 <figure>
-![Detection Pipeline](/images/translated-blogs/blog2/pic2.png)
-  <figcaption>Figure 2: The Wiz Security Graph enables quicker tracing of vulnerabilities and misconfigurations back to code repositories and images for remediation at the source</figcaption>
-</figure>
-<figure>
   <img src="/images/translated-blogs/blog2/pic2.png" alt="Dectecion Pipeline">
-  <figcaption>Figure 2: The Wiz Security Graph enables quicker tracing of vulnerabilities and misconfigurations back to code repositories and images for remediation at the source</figcaption>
+  <figcaption>Figure 1: Wiz prioritizes risks based on threat intelligence and potential impact, helping teams to reduce alert fatigue and focus on high threat alerts</figcaption>
 </figure>
 
 ### Purpose-built to support critical missions
