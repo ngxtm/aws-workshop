@@ -23,15 +23,15 @@ An immersive technical event focused on the latest AWS services and cloud innova
 
 ---
 
-## [Event 2 - [Event Title]](./4.2-Event2/)
-**[Event Name and Brief Description]**
+## [Event 2 - AWS GenAI Builder Club](./4.2-Event2/)
+**AWS GenAI Builder Club - AI-Driven Development Life Cycle: Reimagining Software Engineering**
 
-Details about the second event will be documented here, including key learnings, technical sessions attended, and connections made within the AWS community.
+An intensive technical session exploring AI-Driven Development using Amazon Q Developer and Kiro. This event demonstrated how AI is transforming the entire software development lifecycle, from requirements gathering to deployment, through practical demonstrations and hands-on examples.
 
-- **Date:** [To be filled]
-- **Location:** [To be filled]
-- **Focus:** [To be filled]
-- **Key Takeaways:** [To be filled]
+- **Date:** October 3, 2025
+- **Location:** AWS Event Hall, L26 Bitexco Tower, Ho Chi Minh City
+- **Focus:** AI-Driven Development, Amazon Q Developer, Kiro IDE, AI-DLC Methodology
+- **Key Takeaways:** Understanding AI-DLC's three-phase approach, hands-on demonstrations of natural language to code transformation, integration strategies for AI tools in existing workflows
 
 ---
 

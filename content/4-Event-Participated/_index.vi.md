@@ -23,15 +23,15 @@ Một sự kiện kỹ thuật chuyên sâu tập trung vào các dịch vụ AW
 
 ---
 
-## [Sự kiện 2 - [Tiêu đề sự kiện]](./4.2-Event2/)
-**[Tên sự kiện và mô tả ngắn gọn]**
+## [Sự kiện 2 - AWS GenAI Builder Club](./4.2-Event2/)
+**AWS GenAI Builder Club - AI-Driven Development Life Cycle: Tái tưởng tượng Kỹ thuật Phần mềm**
 
-Chi tiết về sự kiện thứ hai sẽ được ghi lại tại đây, bao gồm những kiến thức chính, các phiên kỹ thuật đã tham dự, và các kết nối được tạo ra trong cộng đồng AWS.
+Một buổi học kỹ thuật chuyên sâu khám phá Phát triển Hướng AI sử dụng Amazon Q Developer và Kiro. Sự kiện này đã trình diễn cách AI đang chuyển đổi toàn bộ chu trình phát triển phần mềm, từ thu thập yêu cầu đến triển khai, thông qua các demo thực tế và ví dụ thực hành.
 
-- **Ngày:** [Sẽ được điền]
-- **Địa điểm:** [Sẽ được điền]
-- **Trọng tâm:** [Sẽ được điền]
-- **Những điểm chính:** [Sẽ được điền]
+- **Ngày:** 3 tháng 10 năm 2025
+- **Địa điểm:** AWS Event Hall, Tầng 26 Tòa nhà Bitexco, Thành phố Hồ Chí Minh
+- **Trọng tâm:** Phát triển Hướng AI, Amazon Q Developer, Kiro IDE, Phương pháp luận AI-DLC
+- **Những điểm chính:** Hiểu cách tiếp cận ba giai đoạn của AI-DLC, các demo thực hành về chuyển đổi ngôn ngữ tự nhiên thành mã, chiến lược tích hợp công cụ AI vào quy trình hiện có
 
 ---
 
