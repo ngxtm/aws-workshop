@@ -35,6 +35,18 @@ An intensive technical session exploring AI-Driven Development using Amazon Q De
 
 ---
 
+## [Event 3 - AWS Cloud Mastery Series #1](./4.3-Event3/)
+**AI/ML/GenAI on AWS - Amazon Bedrock AgentCore & Intelligent Agent Building**
+
+A comprehensive technical workshop on building intelligent agents and generative AI applications using Amazon Bedrock. This event featured multiple expert speakers delivering in-depth sessions on prompt engineering, RAG architecture, AI services, and practical solutions for real-world AI chatbot deployment challenges.
+
+- **Date:** November 15, 2025
+- **Speakers:** Danh Hoang Hieu Nghi (AI Engineer, Renova Cloud), Dinh Le Hoang Anh (Cloud Engineer Trainee), Lam Tuan Kiet (Senior DevOps Engineer FPT Software)
+- **Focus:** Amazon Bedrock, Generative AI, Prompt Engineering, RAG Architecture, AWS AI Services, Multi-step Agent Workflows
+- **Key Takeaways:** Advanced prompt engineering techniques (Zero-Shot, Few-Shot, Chain-of-Thought), RAG implementation patterns, Bedrock Agents architecture, rate limiting strategies for AI applications, comprehensive AWS AI/ML service ecosystem
+
+---
+
 #### Why Event Participation Matters
 Participating in AWS events is crucial for staying current with rapidly evolving cloud technologies. These events provide:
 - Direct access to AWS experts and solution architects

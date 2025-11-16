@@ -35,6 +35,18 @@ Một buổi học kỹ thuật chuyên sâu khám phá Phát triển Hướng A
 
 ---
 
+## [Sự kiện 3 - AWS Cloud Mastery Series #1](./4.3-Event3/)
+**AI/ML/GenAI on AWS - Amazon Bedrock AgentCore & Xây dựng Tác nhân Thông minh**
+
+Một hội thảo kỹ thuật toàn diện về xây dựng các tác nhân thông minh và ứng dụng trí tuệ nhân tạo sinh tạo bằng Amazon Bedrock. Sự kiện này có nhiều diễn giả chuyên gia cung cấp các buổi học sâu về kỹ thuật prompt, kiến trúc RAG, dịch vụ AI, và các giải pháp thực tế cho các thách thức triển khai chatbot AI thực tế.
+
+- **Ngày:** 15 tháng 11 năm 2025
+- **Diễn giả:** Danh Hoang Hieu Nghi (Kỹ sư AI, Renova Cloud), Dinh Le Hoang Anh (Trainee Cloud Engineer), Lam Tuan Kiet (Kỹ sư DevOps Cấp cao FPT Software)
+- **Trọng tâm:** Amazon Bedrock, Trí tuệ Nhân tạo Sinh tạo, Kỹ thuật Prompt, Kiến trúc RAG, Dịch vụ AI của AWS, Quy trình Công việc Tác nhân Đa bước
+- **Những điểm chính:** Các kỹ thuật prompt engineering nâng cao (Zero-Shot, Few-Shot, Chain-of-Thought), các mẫu triển khai RAG, kiến trúc Bedrock Agents, chiến lược giới hạn tốc độ cho ứng dụng AI, hệ sinh thái dịch vụ AI/ML toàn diện của AWS
+
+---
+
 #### Tại sao việc tham gia sự kiện quan trọng
 Tham gia các sự kiện AWS là rất quan trọng để cập nhật các công nghệ đám mây đang phát triển nhanh chóng. Những sự kiện này mang lại:
 - Tiếp cận trực tiếp với các chuyên gia AWS và kiến trúc sư giải pháp

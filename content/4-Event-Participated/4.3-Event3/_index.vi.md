@@ -1,7 +1,7 @@
 ---
 title: "Sự kiện 3"
 date: 2025-11-15
-weight: 5
+weight: 3
 chapter: false
 pre: " <b> 4.3 </b> "
 ---
@@ -12,62 +12,32 @@ pre: " <b> 4.3 </b> "
 
 &emsp; **Tên sự kiện:** ​AI/ML/GenAI on AWS <br>
 &emsp; **Ngày tháng:** 15 tháng 11 năm 2025 <br>
-&emsp; **Diễn giả:** Danh Hoang Hieu Nghi (AI Engineer, Renova Cloud), Dinh Le Hoang Anh (Cloud Engineer Trainee), Lam Tuan Kiet (Senior DevOps Engineer FPT Software) <br>
+&emsp; **Diễn giả:** Danh Hoang Hieu Nghi (Kỹ sư AI, Renova Cloud), Dinh Le Hoang Anh (Trainee Cloud Engineer), Lam Tuan Kiet (Kỹ sư DevOps Cấp cao FPT Software) <br>
 &emsp; **Vai trò:** Người tham dự <br>
 &emsp; **Chủ đề chính:** Xây dựng các tác nhân thông minh và ứng dụng trí tuệ nhân tạo sinh tạo với Amazon Bedrock <br>
 
 ### Tổng quan Sự kiện
 
-Hội thảo này cung cấp một cái nhìn sâu sắc về Amazon Bedrock và khả năng của nó trong việc xây dựng các tác nhân thông minh và ứng dụng trí tuệ nhân tạo sinh tạo. Phiên làm việc bao gồm các mô hình nền tảng, kỹ thuật kỹ thuật prompt (prompt engineering), retrieval-augmented generation (RAG), và các triển khai thực tế của Bedrock agents với các ví dụ thực tế.
+Hội thảo này cung cấp một cái nhìn sâu sắc toàn diện về Amazon Bedrock và khả năng của nó trong việc xây dựng các tác nhân thông minh và ứng dụng trí tuệ nhân tạo sinh tạo. Phiên làm việc bao gồm các mô hình nền tảng, kỹ thuật kỹ thuật prompt, retrieval-augmented generation (RAG), kiến trúc tác nhân, và các giải pháp thực tế cho các thách thức triển khai AI thực tế. Nhiều diễn giả chuyên gia đã cung cấp các bài thuyết trình kỹ thuật với các bản trình diễn trực tiếp và ví dụ thực hành.
 
 ### Các Chủ đề Chính
 
-#### 1. Amazon Bedrock Agent Core
+#### 1. Các Nguyên tắc Cơ bản của Prompt Engineering
 
-Amazon Bedrock Agents cho phép các quy trình công việc đa bước tự động và tích hợp công cụ, cho phép AI đưa ra quyết định và thực hiện các hành động mà không cần can thiệp của con người.
+##### Kỹ thuật Prompting: Zero-Shot Prompting
 
-**Các khả năng chính:**
+![Kỹ thuật Prompting: Trình bày Zero-Shot Prompting](/images/Event-Participated/pic8.jpg)
 
-- Điều phối quy trình công việc đa bước
-- Tích hợp công cụ và gọi hàm
-- Quyết định tự trị dựa trên ngữ cảnh
-- Tích hợp API và nguồn dữ liệu thời gian thực
-- Quản lý bộ nhớ và ngữ cảnh của tác nhân
-
-**Điểm nổi bật của Kiến trúc:**
-
-- Quy trình công việc tác nhân dựa trên sự kiện
-- Quản lý hội thoại có trạng thái
-- Cơ chế xử lý lỗi và thử lại tích hợp sẵn
-- Hỗ trợ cho chuỗi công cụ và logic có điều kiện
-
----
-
-#### 2. Trí tuệ Nhân tạo Sinh tạo với Amazon Bedrock
-
-##### 2.1 Các Mô hình Nền tảng: Lựa chọn & So sánh
-
-Các mô hình nền tảng có sẵn trên AWS:
-
-- **Claude** (của Anthropic) - Lý luận nâng cao và hiểu bối cảnh dài
-- **Llama** (của Meta) - Mã nguồn mở, linh hoạt, tiết kiệm chi phí
-- **Titan** (của AWS) - Được tối ưu hóa cho hệ sinh thái AWS, hỗ trợ đa ngôn ngữ
-
-**Hướng dẫn Lựa chọn:**
-
-- **Claude**: Tốt nhất cho lý luận phức tạp, tạo văn bản sắc thái, và các tài liệu dài
-- **Llama**: Lý tưởng cho các triển khai tiết kiệm chi phí và ứng dụng ưu tiên quyền riêng tư
-- **Titan**: Được khuyên dùng cho các ứng dụng gốc AWS và embeddings
-
-##### 2.2 Kỹ thuật Prompt Engineering
+<figure>
+    <figcaption>Bài thuyết trình kỹ thuật về Kỹ thuật Prompting tập trung vào các phương pháp Zero-Shot Prompting, bao gồm các kỹ thuật phân loại và chiến lược nhập văn bản cho prompt engineering hiệu quả<figcaption>
+</figure>
 
 Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
-**Các kỹ thuật:**
+**Các Phương pháp Prompting Cốt lõi:**
 
 - **Prompting Cơ bản**: Thiết kế hướng dẫn rõ ràng, cụ thể
 - **Chain-of-Thought (CoT) Lý luận**: Chia nhỏ các vấn đề phức tạp thành các bước hợp lý
-
   - Cải thiện độ chính xác cho lý luận toán học và logic
   - Tăng độ tin cậy của mô hình cho các nhiệm vụ đa bước
   - Ví dụ: "Hãy suy nghĩ từng bước..."
@@ -84,13 +54,21 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 - Bao gồm các ví dụ định dạng đầu ra mong muốn
 - Sử dụng prompting dựa trên vai trò ("Bạn là một...")
 
-##### 2.3 Retrieval-Augmented Generation (RAG)
+---
 
-Kiến trúc để nâng cao AI với kiến thức bên ngoài mà không cần tinh chỉnh mô hình.
+#### 2. Quy trình Tạo Văn bản & Kiến trúc RAG
 
-**Kiến trúc RAG:**
+##### Chuyên sâu Retrieval-Augmented Generation
 
-1. **Nhập tài liệu**: Tải lên và chia nhỏ cơ sở kiến thức
+![Quy trình Tạo Văn bản - Chuyên sâu Kiến trúc RAG](/images/Event-Participated/pic9.jpg)
+
+<figure>
+    <figcaption>Giải thích chi tiết về Quy trình Tạo Văn bản hiển thị các thành phần kiến trúc RAG (Retrieval-Augmented Generation) bao gồm mô hình embeddings, vector store, tìm kiếm ngữ nghĩa, tăng cường ngữ cảnh, và quy trình truy xuất dữ liệu<figcaption>
+</figure>
+
+**Các Thành phần Kiến trúc RAG:**
+
+1. **Nhập Tài liệu**: Tải lên và chia nhỏ cơ sở kiến thức
 2. **Tạo Embedding**: Chuyển đổi tài liệu thành biểu diễn vector
 3. **Lưu trữ Vector**: Lưu trữ embeddings trong cơ sở dữ liệu vector
 4. **Xử lý Truy vấn**: Chuyển đổi truy vấn người dùng thành embeddings
@@ -112,178 +90,306 @@ Kiến trúc để nâng cao AI với kiến thức bên ngoài mà không cần
 - Giảm các phản ứng vô căn cứ
 - Tích hợp kiến thức cụ thể miền
 
-##### 2.4 Bedrock Agents: Triển khai Thực tế
+---
 
-Xây dựng các quy trình công việc đa bước với tích hợp công cụ.
+#### 3. Kiến trúc Amazon Bedrock AgentCore
 
-**Các thành phần chính:**
+##### Các Thành phần Nền tảng Agentic Toàn diện
 
-- Bộ não tác nhân (mô hình nền tảng)
-- Các nhóm hành động (công cụ/API có sẵn)
-- Các cơ sở kiến thức (tài liệu RAG)
-- Prompts và hướng dẫn
-- Quản lý phiên
+![Amazon Bedrock AgentCore - Kiến trúc Thành phần](/images/Event-Participated/pic17.jpg)
 
-**Trường hợp sử dụng:**
+<figure>
+    <figcaption>Amazon Bedrock AgentCore - Nền tảng agentic toàn diện hiển thị các thành phần cốt lõi: Runtime, Memory, Identity, Gateway, Code Interpreter, Browser Tool, và Observability cho triển khai tác nhân sản xuất sẵn sàng<figcaption>
+</figure>
 
-- Trợ lý dịch vụ khách hàng thông minh
-- Quy trình công việc phân tích tài liệu và tóm tắt
-- Các tác nhân tạo mã và gỡ lỗi
-- Tự động hóa phân tích dữ liệu và báo cáo
+**Các Thành phần Kiến trúc Chính:**
 
-##### 2.5 Guardrails: An toàn & Lọc Nội dung
-
-Triển khai các biện pháp an toàn cho các ứng dụng AI sản xuất.
-
-**Tính năng Guardrails:**
-
-- Lọc nội dung (từ tục, nội dung tường minh)
-- Phát hiện và loại bỏ PII (Thông tin Nhận dạng Cá nhân)
-- Chặn nội dung có hại
-- Nhận thức chủ đề nhạy cảm
-- Định nghĩa quy tắc tùy chỉnh
-
-**Triển khai:**
-
-- Guardrails nội tuyến trong các lời gọi mô hình
-- Lọc trước và sau xử lý
-- Ghi nhật ký kiểm toán cho các sự kiện an toàn
-- Theo dõi tuân thủ
-
-##### 2.6 Demo Trực tiếp: Xây dựng Chatbot Trí tuệ Nhân tạo Sinh tạo
-
-Hướng dẫn xây dựng một chatbot sản xuất sẵn sàng:
-
-**Kiến trúc:**
-
-- Frontend: Giao diện trò chuyện (web/mobile)
-- API Gateway: Định tuyến yêu cầu tới backend
-- Lambda: Điều phối các cuộc gọi Bedrock API
-- RDS/DynamoDB: Lưu trữ lịch sử hội thoại và dữ liệu người dùng
-- CloudWatch: Giám sát và ghi nhật ký các tương tác
-- VectorDB: Lưu trữ cơ sở kiến thức RAG
-
-**Các bước triển khai chính:**
-
-1. Thiết lập các vai trò IAM và truy cập Bedrock
-2. Tạo API gọi mô hình
-3. Triển khai quản lý bộ nhớ hội thoại
-4. Tích hợp RAG với cơ sở kiến thức
-5. Thêm xử lý lỗi và giới hạn tốc độ
-6. Triển khai với khả năng mở rộng
+- **Runtime**: Môi trường thực thi cốt lõi cho các hoạt động của tác nhân
+- **Memory**: Quản lý trạng thái và bối cảnh cho tác nhân
+- **Identity**: Khung xác thực và ủy quyền
+- **Gateway**: Cổng API cho giao tiếp tác nhân
+- **Code Interpreter**: Thực thi và xác nhận mã được tạo
+- **Browser Tool**: Khả năng tương tác web và truy xuất dữ liệu
+- **Observability**: Theo dõi, ghi nhật ký và tracing cho tác nhân
 
 ---
 
-#### 3. Hệ sinh thái Dịch vụ AI của AWS
+#### 4. Dịch vụ AgentCore & Mở rộng Quy mô
 
-##### 3.1 Amazon Rekognition
+##### Dịch vụ Cho phép Tác nhân Mở rộng Quy mô
 
-**Mục đích:** Dịch vụ thị giác máy tính để phân tích hình ảnh và video
+![Dịch vụ AgentCore - Kiến trúc Mở rộng Quy mô](/images/Event-Participated/pic18.jpg)
 
-**Khả năng:**
+<figure>
+    <figcaption>Kiến trúc dịch vụ AgentCore hiển thị cách các tác nhân mở rộng với Framework, Agent Instruction, Agent local tools, Agent context, AgentCore Gateway, Browser, Code Interpreter, Identity, Memory, và Observability cùng hoạt động<figcaption>
+</figure>
 
-- Phát hiện đối tượng và cảnh
-- Nhận dạng khuôn mặt và phân tích
-- Phát hiện văn bản trong hình ảnh (OCR)
-- Nhận dạng người nổi tiếng
-- Phát hiện hoạt động trong video
+**Kiến trúc Tác nhân Có thể Mở rộng:**
 
-**Trường hợp sử dụng trong Thực tế:**
+**Lớp Khách hàng:**
+- Nhiều kết nối khách hàng
+- Định tuyến yêu cầu và cân bằng tải
 
-- Kiểm duyệt nội dung cho các nền tảng truyền thông xã hội
-- Các hệ thống bảo mật và giám sát (nhận dạng lại người)
-- Các tính năng trợ năng (tạo mô tả hình ảnh)
-- Phân tích bán lẻ (theo dõi kho hàng trên kệ)
-- Phân tích hình ảnh y tế (với các mô hình tùy chỉnh)
+**Lớp Thời gian chạy Tác nhân:**
+- Framework: Công cụ thực thi tác nhân cốt lõi
+- Agent Instruction: Định nghĩa nhiệm vụ và quy trình công việc
+- Agent local tools: Công cụ tích hợp sẵn và tùy chỉnh
+- Agent context: Quản lý trạng thái và bộ nhớ
 
----
-
-##### 3.2 Amazon Polly
-
-**Mục đích:** Dịch vụ chuyển đổi văn bản thành giọng nói
-
-**Tính năng:**
-
-- Hơn 140+ giọng nói trên 30+ ngôn ngữ
-- Neural TTS để có chất lượng giống con người
-- Đánh dấu SSML để kiểm soát chi tiết
-- Từ điển phát âm tùy chỉnh
-
-**Trường hợp sử dụng trong Thực tế:**
-
-- Tạo sách nói và podcast
-- Các tính năng trợ năng cho người khiếm thị
-- Các hệ thống phản hồi giọng nói tương tác (IVR)
-- Tiếng nói cho nền tảng e-learning
-- Tạo đối thoại nhân vật trò chơi
+**Dịch vụ AgentCore:**
+- Gateway: Xử lý và định tuyến yêu cầu
+- Browser Tool: Tương tác web và quét dữ liệu
+- Code Interpreter: Thực thi mã an toàn
+- Identity: Quyền và kiểm soát truy cập
+- Memory: Quản lý trạng thái liên tục
+- Observability: Tracing đầy đủ và giám sát
 
 ---
 
-##### 3.3 Amazon Transcribe
+#### 5. Từ Nguyên mẫu đến Sản xuất
 
-**Mục đích:** Dịch vụ nhận dạng giọng nói tự động (ASR)
+##### Thách thức Sản xuất & Giải pháp
 
-**Tính năng:**
+![Nguyên mẫu đến Sản xuất - Khoảng cách](/images/Event-Participated/pic19.jpg)
 
-- Phiên âm thời gian thực và theo lô
-- Dấu câu tự động
-- Nhận dạng người nói
-- Hỗ trợ thuật ngữ y tế
-- Hỗ trợ đa ngôn ngữ
+<figure>
+    <figcaption>Khoảng cách từ nguyên mẫu đến sản xuất minh họa các thách thức khi chuyển từ POC (Proof of Concept) sang tác nhân AI sản xuất, bao gồm Performance, Scalability, Security, Governance, và đạt được giá trị kinh doanh có ý nghĩa<figcaption>
+</figure>
 
-**Trường hợp sử dụng trong Thực tế:**
+**Danh sách kiểm tra Sẵn sàng Sản xuất:**
 
-- Phiên âm cuộc họp và cuộc gọi (tích hợp Teams, Zoom)
-- Ghi âm tuân thủ cho các tổ chức tài chính
-- Đảm bảo chất lượng dịch vụ khách hàng
-- Tài liệu pháp lý và y tế
-- Khả năng tiếp cận nội dung (phụ đề video)
+**Hiệu suất:**
+- Tối ưu hóa độ trễ
+- Yêu cầu thông lượng
+- Hiệu quả tài nguyên
 
----
+**Khả năng mở rộng:**
+- Xử lý tác nhân đồng thời
+- Phân phối tải
+- Khả năng tự động mở rộng
 
-##### 3.4 Amazon Comprehend
+**Bảo mật:**
+- Kiểm soát truy cập và xác thực
+- Mã hóa dữ liệu và bảo vệ
+- Ghi nhật ký kiểm toán và tuân thủ
 
-**Mục đích:** Xử lý ngôn ngữ tự nhiên và phân tích văn bản
+**Quản trị:**
+- Khung quản trị mô hình
+- Truy xuất quyết định
+- Tuân thủ quy định
 
-**Khả năng:**
-
-- Phân tích tư cảm
-- Nhận dạng thực thể (người, địa điểm, tổ chức)
-- Trích xuất cụm từ chính
-- Phát hiện ngôn ngữ
-- Mô hình hóa chủ đề
-
-**Trường hợp sử dụng trong Thực tế:**
-
-- Giám sát tư cảm truyền thông xã hội
-- Phân tích phản hồi khách hàng
-- Sàng lọc sơ yếu lý lịch và CV (trích xuất thực thể)
-- Phân loại và gắn thẻ nội dung
-- Phát hiện gian lận (các mẫu ngôn ngữ)
+**Giá trị Kinh doanh:**
+- Đo lường ROI
+- Xác nhận trường hợp sử dụng
+- Tích hợp với quy trình kinh doanh
 
 ---
 
-##### 3.5 Các Dịch vụ AI Khác
+#### 6. API RetrieveAndGenerate
 
-**Amazon Lookout for Anomalies:** Phát hiện các mẫu bất thường trong các chỉ số và dữ liệu chuỗi thời gian
-**Amazon Forecast:** Dự báo chuỗi thời gian để lập kế hoạch nhu cầu
-**Amazon Personalize:** Công cụ cá nhân hóa thời gian thực cho các khuyến nghị
-**Amazon Textract:** Trích xuất văn bản và dữ liệu từ tài liệu
-**Amazon Lookout for Vision:** Phát hiện các khiếm khuyết trong sản xuất/kiểm soát chất lượng
+##### Cơ sở Kiến thức cho Amazon Bedrock
+
+![API RetrieveAndGenerate - Triển khai Cơ sở Kiến thức](/images/Event-Participated/pic20.jpg)
+
+<figure>
+    <figcaption>API RetrieveAndGenerate cho Cơ sở Kiến thức hiển thị luồng hoàn chỉnh: nhập người dùng, tạo truy vấn với embeddings, truy xuất tài liệu, tăng cường bối cảnh, và tạo phản ứng từ LLM<figcaption>
+</figure>
+
+**Luồng Triển khai RAG:**
+
+**Bước 1: Chuẩn bị Truy vấn**
+- Xử lý nhập người dùng
+- Tạo embedding truy vấn từ nhập người dùng
+
+**Bước 2: Truy xuất Cơ sở Kiến thức**
+- Truy xuất tài liệu tương tự từ các cơ sở kiến thức
+- Khớp ngữ nghĩa bằng embeddings
+
+**Bước 3: Tăng cường Bối cảnh**
+- Tăng cường truy vấn người dùng với tài liệu được truy xuất
+- Tạo prompt nâng cao với bối cảnh liên quan
+
+**Bước 4: Tạo Phản ứng**
+- Tạo phản ứng từ LLM sử dụng bối cảnh nâng cao
+- Trả lại câu trả lời với trích dẫn thích hợp
+
+**Lợi ích:**
+- Phản ứng có căn cứ với quy khích nguồn
+- Thông tin hiện tại mà không cần huấn luyện lại
+- Giảm các phản ứng vô căn cứ
+- Cập nhật kiến thức tiết kiệm chi phí
 
 ---
 
-### Phiên Hỏi & Đáp: Các Thách thức & Giải pháp Kỹ thuật
+#### 7. Các Khung xây dựng Tác nhân
+
+##### Khung Tác nhân Mã nguồn Mở
+
+![Khung Xây dựng Tác nhân - Tổng quan Hệ sinh thái](/images/Event-Participated/pic21.jpg)
+
+<figure>
+    <figcaption>Tổng quan toàn diện về các khung xây dựng và SDK mã nguồn mở cho tác nhân bao gồm Strands, LangGraph, LangChain, Crew.ai, Google ADK, LlamaIndex, và hơn thế nữa<figcaption>
+</figure>
+
+**Các Khung Tác nhân Phổ biến:**
+
+**Strands SDK**
+- Khung điều phối tác nhân
+- Hỗ trợ quy trình công việc đa bước
+
+**LangGraph & LangChain**
+- Chaining và điều phối mô hình ngôn ngữ
+- Kiến trúc thành phần mô đun
+- Hệ sinh thái tích hợp mở rộng
+
+**Crew.ai**
+- Khung hợp tác đa tác nhân
+- Gán tác nhân dựa trên vai trò
+- Quản lý phụ thuộc nhiệm vụ
+
+**Google ADK (Agent Development Kit)**
+- Khung tác nhân gốc Google Cloud
+- Tích hợp Gemini
+
+**LlamaIndex**
+- Khung lập chỉ mục và truy xuất dữ liệu
+- Tối ưu hóa quy trình RAG
+- Quản lý cơ sở kiến thức
+
+**OpenAI SDKs**
+- Khung tác nhân OpenAI chính thức
+- Gọi hàm và sử dụng công cụ
+
+---
+
+#### 8. Hệ sinh thái Dịch vụ AI của AWS
+
+##### Bộ Dịch vụ AI/ML Toàn diện
+
+![Dịch vụ AI AWS - Danh mục Dịch vụ Toàn diện](/images/Event-Participated/pic22.jpg)
+
+<figure>
+    <figcaption>Hệ sinh thái dịch vụ AI AWS bao gồm Rekognition (thị giác), Translate (ngôn ngữ), Textract (tài liệu), Transcribe (giọng nói sang văn bản), Polly (văn bản sang giọng nói), Comprehend (NLP), Kendra (tìm kiếm), Lookout (bất thường), và Personalize (đề xuất)<figcaption>
+</figure>
+
+**Các Dịch vụ AI/ML Cốt lõi:**
+
+**Dịch vụ Thị giác:**
+- **Amazon Rekognition**: Phân tích hình ảnh và video, phát hiện đối tượng, nhận dạng khuôn mặt
+
+**Dịch vụ Ngôn ngữ:**
+- **Amazon Translate**: Dịch máy thần kinh
+- **Amazon Transcribe**: Nhận dạng giọng nói tự động
+- **Amazon Comprehend**: Xử lý ngôn ngữ tự nhiên và phân tích tư cảm
+- **Amazon Polly**: Tổng hợp văn bản thành giọng nói
+
+**Dữ liệu & Kiến thức:**
+- **Amazon Textract**: Trích xuất văn bản và dữ liệu từ tài liệu
+- **Amazon Kendra**: Tìm kiếm và truy xuất tài liệu thông minh
+
+**Dịch vụ Trí tuệ:**
+- **Amazon Lookout**: Phát hiện bất thường trong chỉ số và dữ liệu chuỗi thời gian
+- **Amazon Personalize**: Công cụ cá nhân hóa thời gian thực
+- **Amazon Forecast**: Dự báo chuỗi thời gian
+
+---
+
+#### 9. Các Bài thuyết trình Diễn giả & Chuyên sâu Kỹ thuật
+
+##### Bài thuyết trình Khai mạc Amazon Bedrock AgentCore
+
+![Amazon Bedrock AgentCore Khai mạc - Danh Hoang Hieu Nghi](/images/Event-Participated/pic13.jpg)
+
+<figure>
+    <figcaption>Bài thuyết trình chính về Amazon Bedrock AgentCore được trình bày bởi Danh Hoang Hieu Nghi (Kỹ sư AI, Renova Cloud), giới thiệu các khái niệm cốt lõi về kiến trúc tác nhân thông minh và điều phối quy trình công việc đa bước<figcaption>
+</figure>
+
+**Các Chủ đề Bài thuyết trình:**
+- Khả năng và tầm nhìn của Amazon Bedrock
+- Các nguyên tắc cơ bản kiến trúc AgentCore
+- Các trường hợp sử dụng thực tế cho tác nhân thông minh
+- Bắt đầu với Bedrock Agents
+
+---
+
+##### Tổng quan Dịch vụ AI AWS
+
+![Trình bày Dịch vụ AI AWS - Các Dịch vụ AI Được Đào tạo Trước Khác](/images/Event-Participated/pic14.jpg)
+
+<figure>
+    <figcaption>Bài thuyết trình kỹ thuật về Các Dịch vụ AI Được Đào tạo Trước bao gồm Rekognition, Polly, Transcribe, và Comprehend, trình bày hệ sinh thái dịch vụ AI/ML toàn diện của AWS cho các ứng dụng thực tế<figcaption>
+</figure>
+
+**Các Dịch vụ Bao phủ:**
+- Amazon Rekognition cho thị giác máy tính
+- Amazon Polly cho tổng hợp giọng nói
+- Amazon Transcribe cho chuyển đổi giọng nói sang văn bản
+- Amazon Comprehend cho NLP và phân tích tư cảm
+- Các bản trình diễn trường hợp sử dụng thực tế
+
+---
+
+##### Generative AI với Amazon Bedrock - Nhóm Diễn giả Đa phương
+
+![Nhóm Diễn giả Đa phương - Generative AI với Amazon Bedrock](/images/Event-Participated/pic15.jpg)
+
+<figure>
+    <figcaption>Thảo luận nhóm diễn giả đa phương về Trí tuệ Nhân tạo Sinh tạo với Amazon Bedrock có đại diện Lam Tuan Kiet (Kỹ sư DevOps Cấp cao FPT Software), Dinh Le Hoang Anh (Trainee Cloud Engineer), và các diễn giả khác thảo luận về các triển khai thực tế và các thực hành tốt nhất<figcaption>
+</figure>
+
+**Các Chủ đề Thảo luận Nhóm:**
+- Lựa chọn mô hình nền tảng và so sánh
+- Các thực hành tốt nhất prompt engineering
+- Các chiến lược triển khai RAG
+- Các cân nhắc triển khai sản xuất
+- Tối ưu hóa chi phí cho khối lượng công việc AI
+
+---
+
+##### Ảnh Nhóm Hội thảo
+
+![Ảnh Nhóm Hội thảo - Sự kiện AWS Cloud Mastery](/images/Event-Participated/pic16.jpg)
+
+<figure>
+    <figcaption>Ảnh nhóm những người tham dự hội thảo và diễn giả trước màn hình hiển thị tương tác Kahoot, đại diện cho môi trường học tập hợp tác và hoàn thành thành công sự kiện AWS Cloud Mastery Series #1<figcaption>
+</figure>
+
+---
+
+#### 10. Sự Tham gia Hội thảo & Người tham dự
+
+##### Các Phiên Hội thảo & Học tập Tương tác
+
+![Phiên Hội thảo Kỹ thuật](/images/Event-Participated/pic10.jpg)
+
+<figure>
+    <figcaption>Bài thuyết trình hội thảo về các kỹ thuật AI/ML nâng cao và tích hợp dịch vụ AWS<figcaption>
+</figure>
+
+![Trình diễn Kỹ thuật Trực tiếp](/images/Event-Participated/pic11.jpg)
+
+<figure>
+    <figcaption>Những người tham dự tập trung vào các bài thuyết trình kỹ thuật và học tập về các dịch vụ AI của AWS<figcaption>
+</figure>
+
+![Cộng đồng Hội thảo & Chia sẻ Kiến thức](/images/Event-Participated/pic12.jpg)
+
+<figure>
+    <figcaption>Những người tham dự hội thảo tham gia thảo luận và trao đổi kiến thức trong sự kiện AWS Cloud Mastery<figcaption>
+</figure>
+
+---
+
+### Phiên Hỏi & Đáp: Các Thách thức Kỹ thuật & Giải pháp
 
 #### Q1: Quản lý Tin nhắn Lớn Mà Không Sử dụng SQS
 
-**Phát biểu vấn đề:**
+**Phát biểu Vấn đề:**
 Xử lý tin nhắn khối lượng lớn và tải trọng lớn mà không sử dụng SQS.
 
-**Các giải pháp được thảo luận:**
+**Các Giải pháp Được thảo luận:**
 
-1. **Gọi trực tiếp với Giới hạn Đồng thời**
-
+1. **Gọi Trực tiếp với Giới hạn Đồng thời**
    - Sử dụng Lambda dự trữ đồng thời
    - Triển khai giới hạn tốc độ cấp ứng dụng
    - Sử dụng DynamoDB để theo dõi yêu cầu đang xử lý
@@ -291,7 +397,6 @@ Xử lý tin nhắn khối lượng lớn và tải trọng lớn mà không s�
    - Nhược: Thông lượng giới hạn, không có cơ chế thử lại tích hợp sẵn
 
 2. **DynamoDB Streams**
-
    - Ghi tin nhắn vào DynamoDB
    - Lambda được kích hoạt bởi DynamoDB Streams
    - Cung cấp đảm bảo sắp xếp và khả năng phát lại
@@ -299,7 +404,6 @@ Xử lý tin nhắn khối lượng lớn và tải trọng lớn mà không s�
    - Nhược: Chi phí lưu trữ, độ trễ cao hơn
 
 3. **Kinesis Data Streams**
-
    - Luồng khối lượng lớn tin nhắn
    - Mở rộng dựa trên mảnh dữ liệu
    - Các nhóm người tiêu dùng để xử lý song song
@@ -321,13 +425,12 @@ Trong hầu hết các trường hợp, **Kinesis** cung cấp sự cân bằng 
 
 #### Q2: Giới hạn Tốc độ Chatbot AI (Giới hạn 1-2 yêu cầu/phút)
 
-**Phát biểu vấn đề:**
+**Phát biểu Vấn đề:**
 Ràng buộc API hoặc mô hình giới hạn chatbot ở 1-2 yêu cầu trên phút, cần các giải pháp để xử lý nhu cầu người dùng cao hơn.
 
-**Các giải pháp được thảo luận:**
+**Các Giải pháp Được thảo luận:**
 
 1. **Xếp hàng Yêu cầu & Xử lý Theo lô**
-
    - Xếp hàng các yêu cầu đến trong SQS/Kinesis
    - Xử lý theo lô với tốc độ cho phép
    - Gửi thông báo hoàn thành qua SNS/EventBridge
@@ -336,7 +439,6 @@ Ràng buộc API hoặc mô hình giới hạn chatbot ở 1-2 yêu cầu trên 
    - Nhược: Độ trễ cao hơn cho người dùng cuối
 
 2. **Bộ nhớ đệm Phản ứng**
-
    - Bộ nhớ đệm các câu hỏi và phản ứng phổ biến
    - Kiểm tra bộ nhớ đệm trước khi thực hiện cuộc gọi API
    - Sử dụng DynamoDB hoặc ElastiCache để lưu trữ
@@ -345,7 +447,6 @@ Ràng buộc API hoặc mô hình giới hạn chatbot ở 1-2 yêu cầu trên 
    - Nhược: Rủi ro dữ liệu cũ, chi phí quản lý bộ nhớ đệm
 
 3. **Kiểm soát Đồng thời Dựa trên Phiên**
-
    - Triển khai giới hạn tốc độ theo người dùng hoặc phiên
    - Theo dõi các phiên đồng thời trong DynamoDB
    - Xếp hàng yêu cầu từ cùng phiên theo thứ tự
@@ -353,7 +454,6 @@ Ràng buộc API hoặc mô hình giới hạn chatbot ở 1-2 yêu cầu trên 
    - Nhược: Quản lý trạng thái phức tạp
 
 4. **Nhiều Phiên bản Mô hình / Cân bằng Tải**
-
    - Nếu sử dụng các mô hình tại chỗ hoặc trong container
    - Chạy nhiều phiên bản phía sau bộ cân bằng tải
    - Phân phối yêu cầu trên các phiên bản
@@ -361,7 +461,6 @@ Ràng buộc API hoặc mô hình giới hạn chatbot ở 1-2 yêu cầu trên 
    - Nhược: Chi phí cơ sở hạ tầng
 
 5. **Yêu cầu Ưu tiên & Hàng đợi Ưu tiên**
-
    - Triển khai các mức ưu tiên (người dùng VIP, yêu cầu quan trọng)
    - SQS với các thuộc tính ưu tiên tin nhắn
    - Xử lý các yêu cầu ưu tiên cao trước
@@ -393,7 +492,6 @@ Yêu cầu người dùng → API Gateway
 ```
 
 **Các Chỉ số Chính cần Giám sát:**
-
 - Độ sâu của hàng đợi
 - Độ trễ API
 - Tỷ lệ bộ nhớ đệm trúng
@@ -408,97 +506,44 @@ Yêu cầu người dùng → API Gateway
 
 - Hiểu sâu về kiến trúc Amazon Bedrock và khả năng
 - Lựa chọn mô hình nền tảng và so sánh
-- Các kỹ thuật prompt engineering nâng cao (CoT, Few-shot)
+- Các kỹ thuật prompt engineering nâng cao (CoT, Few-shot, Zero-shot)
 - Các mẫu triển khai RAG để tích hợp kiến thức
-- Bedrock Agents để tự động hóa quy trình công việc đa bước
-- Hệ sinh thái dịch vụ AI của AWS và các trường hợp sử dụng
+- Kiến trúc Bedrock Agents và tự động hóa quy trình công việc đa bước
+- Các thành phần AgentCore và chiến lược khả năng mở rộng
+- Hệ sinh thái khung xây dựng tác nhân
+- Hệ sinh thái dịch vụ AI AWS và các trường hợp sử dụng thực tế
 
 **Giải pháp Thực tế:**
 
 - Các mẫu giới hạn tốc độ và xử lý tin nhắn hiệu quả cho ứng dụng AI
 - Chiến lược bộ nhớ đệm để tối ưu hóa việc sử dụng API
 - Kiến trúc dựa trên hàng đợi để xử lý các nút thắt
+- Danh sách kiểm tra sẵn sàng sản xuất cho tác nhân AI
 - Các ví dụ thực tế về tích hợp dịch vụ AI
 
 **Các Mẫu Kiến trúc Học được:**
 
 - Kiến trúc chatbot serverless
-- Thiết kế quy trình RAG
+- Thiết kế quy trình RAG và triển khai
 - Quy trình công việc tự động hóa dựa trên tác nhân
 - Triển khai AI an toàn và tuân thủ với guardrails
+- Các hệ thống đa tác nhân có thể mở rộng
 
 ### Suy ngẫm Cá nhân
 
-Hội thảo này nâng cao đáng kể sự hiểu biết của tôi về xây dựng các ứng dụng trí tuệ nhân tạo sinh tạo sản xuất sẵn sàng trên AWS. Sự kết hợp giữa kiến thức về mô hình nền tảng, các kỹ thuật prompt nâng cao, và các mẫu kiến trúc thực tế cung cấp một nền tảng vững chắc để phát triển các tác nhân thông minh và các ứng dụng được cấp năng lượng bởi AI.
+Hội thảo này nâng cao đáng kể sự hiểu biết của tôi về xây dựng các ứng dụng trí tuệ nhân tạo sinh tạo sản xuất sẵn sàng trên AWS. Sự kết hợp giữa kiến thức về mô hình nền tảng, các kỹ thuật prompt nâng cao, các sơ đồ kiến trúc toàn diện, và các giải pháp thực tế cung cấp một nền tảng vững chắc để phát triển các tác nhân thông minh và các ứng dụng được cấp năng lượng bởi AI quy mô lớn.
+
+Hội thảo bao gồm cả khái niệm lý thuyết và triển khai thực tế, với các ví dụ thực tế cho thấy cách khắc phục những thách thức phổ biến trong triển khai AI. Định dạng đa diễn giả cho phép có những quan điểm đa dạng về các thực hành tốt nhất và các mẫu mới nổi trong phát triển AI.
 
 Các lĩnh vực chính để khám phá thêm:
 
 - RAG nâng cao với tìm kiếm kết hợp (ngữ nghĩa + từ khóa)
 - Tinh chỉnh các mô hình nền tảng cho các miền chuyên biệt
-- Các hệ thống đa tác nhân và hợp tác tác nhân
+- Các mẫu hợp tác hệ thống đa tác nhân và tác nhân
 - MLOps và giám sát cho các ứng dụng GenAI
 - Tối ưu hóa chi phí cho khối lượng công việc AI cao
+- Tích hợp nhiều dịch vụ AI AWS trong các quy trình công việc phức tạp
 
-### Ảnh Sự kiện
+---
 
-#### Kỹ thuật Prompt Engineering & Zero-Shot Prompting
-
-![Kỹ thuật Prompting: Trình bày Zero-Shot Prompting](/images/Event-Participated/pic8.jpg)
-
-<figure>
-    <figcaption>Bài thuyết trình kỹ thuật về Kỹ thuật Prompting tập trung vào các phương pháp Zero-Shot Prompting, bao gồm các kỹ thuật phân loại và chiến lược nhập văn bản cho prompt engineering hiệu quả<figcaption>
-</figure>
-
-#### Quy trình Tạo Văn bản & Kiến trúc RAG
-
-![Quy trình Tạo Văn bản - Chuyên sâu Kiến trúc RAG](/images/Event-Participated/pic9.jpg)
-
-<figure>
-    <figcaption>Giải thích chi tiết về Quy trình Tạo Văn bản hiển thị các thành phần kiến trúc RAG (Retrieval-Augmented Generation) bao gồm mô hình embeddings, vector store, tìm kiếm ngữ nghĩa, tăng cường ngữ cảnh, và quy trình truy xuất dữ liệu<figcaption>
-</figure>
-
-#### Các Phiên Hội thảo Kỹ thuật Bổ sung
-
-![Phiên Hội thảo - Nội dung Kỹ thuật Bổ sung](/images/Event-Participated/pic10.jpg)
-
-<figure>
-    <figcaption>Bài thuyết trình hội thảo về các kỹ thuật AI/ML nâng cao và tích hợp dịch vụ AWS<figcaption>
-</figure>
-
-![Môi trường Hội thảo - Trình diễn Kỹ thuật Trực tiếp](/images/Event-Participated/pic11.jpg)
-
-<figure>
-    <figcaption>Những người tham dự tập trung vào các bài thuyết trình kỹ thuật và học tập về các dịch vụ AI của AWS<figcaption>
-</figure>
-
-![Cộng đồng Hội thảo & Chia sẻ Kiến thức](/images/Event-Participated/pic12.jpg)
-
-<figure>
-    <figcaption>Những người tham dự hội thảo tham gia thảo luận và trao đổi kiến thức trong sự kiện AWS Cloud Mastery<figcaption>
-</figure>
-
-#### Các Bài thuyết trình Diễn giả & Phiên Chuyên gia
-
-![Bài thuyết trình Khai mạc Amazon Bedrock AgentCore của Danh Hoang Hieu Nghi](/images/Event-Participated/pic13.jpg)
-
-<figure>
-    <figcaption>Bài thuyết trình chính về Amazon Bedrock AgentCore được trình bày bởi Danh Hoang Hieu Nghi (Kỹ sư AI, Renova Cloud), giới thiệu các khái niệm cốt lõi về kiến trúc tác nhân thông minh và điều phối quy trình công việc đa bước<figcaption>
-</figure>
-
-![Tổng quan Dịch vụ AI của AWS - Các Dịch vụ AI Được Đào tạo Trước Khác](/images/Event-Participated/pic14.jpg)
-
-<figure>
-    <figcaption>Bài thuyết trình kỹ thuật về Các Dịch vụ AI Được Đào tạo Trước bao gồm Rekognition, Polly, Transcribe, và Comprehend, trình bày hệ sinh thái dịch vụ AI/ML toàn diện của AWS cho các ứng dụng thực tế<figcaption>
-</figure>
-
-![Trí tuệ Nhân tạo Sinh tạo với Amazon Bedrock - Thảo luận Nhóm Diễn giả Đa phương](/images/Event-Participated/pic15.jpg)
-
-<figure>
-    <figcaption>Thảo luận nhóm diễn giả đa phương về Trí tuệ Nhân tạo Sinh tạo với Amazon Bedrock có đại diện Lam Tuan Kiet (Kỹ sư DevOps Cấp cao FPT Software), Dinh Le Hoang Anh (Trainee Cloud Engineer), và các diễn giả khác thảo luận về các triển khai thực tế và các thực hành tốt nhất<figcaption>
-</figure>
-
-![Ảnh Nhóm Hội thảo - Kết thúc Sự kiện AWS Cloud Mastery](/images/Event-Participated/pic16.jpg)
-
-<figure>
-    <figcaption>Ảnh nhóm những người tham dự hội thảo và diễn giả trước màn hình hiển thị tương tác Kahoot, đại diện cho môi trường học tập hợp tác và hoàn thành thành công sự kiện AWS Cloud Mastery Series #1<figcaption>
-</figure>
+_P/S: Hội thảo này cung cấp những hiểu biết có thể thực hiện được vào việc xây dựng các ứng dụng AI có khả năng mở rộng, sản xuất sẵn sàng. Các cuộc thảo luận kỹ thuật về giới hạn tốc độ, xử lý tin nhắn, và kiến trúc tác nhân đặc biệt có giá trị khi giải quyết các ràng buộc thực tế trong triển khai các chatbot AI và tác nhân thông minh._
