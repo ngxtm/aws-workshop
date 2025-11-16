@@ -543,7 +543,3 @@ Các lĩnh vực chính để khám phá thêm:
 - MLOps và giám sát cho các ứng dụng GenAI
 - Tối ưu hóa chi phí cho khối lượng công việc AI cao
 - Tích hợp nhiều dịch vụ AI AWS trong các quy trình công việc phức tạp
-
----
-
-_P/S: Hội thảo này cung cấp những hiểu biết có thể thực hiện được vào việc xây dựng các ứng dụng AI có khả năng mở rộng, sản xuất sẵn sàng. Các cuộc thảo luận kỹ thuật về giới hạn tốc độ, xử lý tin nhắn, và kiến trúc tác nhân đặc biệt có giá trị khi giải quyết các ràng buộc thực tế trong triển khai các chatbot AI và tác nhân thông minh._
