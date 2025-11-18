@@ -54,7 +54,7 @@ This comprehensive all-day workshop provided an in-depth exploration of DevOps p
 ![AWS CI/CD Pipeline Architecture](/images/Event-Participated/pic24.jpg)
 
 <figure>
-    <figcaption>Comprehensive AWS CI/CD Pipeline architecture demonstrating the complete DevOps workflow from source control through deployment and monitoring</figcaption>
+    <figcaption>AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline integration showcasing the seamless CI/CD workflow with source control triggering automated tests and deployments</figcaption>
 </figure>
 
 **AWS CodeCommit:**
@@ -93,7 +93,7 @@ This comprehensive all-day workshop provided an in-depth exploration of DevOps p
 ![AWS CodeBuild Configuration](/images/Event-Participated/pic25.jpg)
 
 <figure>
-    <figcaption>AWS CodeBuild pipeline showing source compilation, testing stages, and artifact generation for production deployments</figcaption>
+    <figcaption>CodeBuild environment configuration with build specifications, environment variables, and Docker container setup for consistent build processes across development and production</figcaption>
 </figure>
 
 - **Source Stage:** Code retrieval from CodeCommit, GitHub, or other repositories
@@ -128,7 +128,7 @@ This comprehensive all-day workshop provided an in-depth exploration of DevOps p
 ![Blue-Green Deployment Strategy](/images/Event-Participated/pic26.jpg)
 
 <figure>
-    <figcaption>Blue-Green deployment pattern showing parallel environments with instant traffic switching for zero-downtime deployments</figcaption>
+    <figcaption>Blue-Green deployment architecture with production traffic routing from stable blue environment to newly deployed green environment, enabling instant rollback capabilities</figcaption>
 </figure>
 
 **2. Canary Deployment:**
@@ -180,7 +180,7 @@ Code Commit → CodeBuild → CodeDeploy → Production
 ![Infrastructure as Code Concepts](/images/Event-Participated/pic27.jpg)
 
 <figure>
-    <figcaption>IaC presentation showing CloudFormation and CDK approaches for managing AWS infrastructure through code</figcaption>
+    <figcaption>Infrastructure as Code paradigm demonstration comparing declarative CloudFormation templates with programmatic CDK approaches for reproducible infrastructure deployments</figcaption>
 </figure>
 
 **AWS CloudFormation:**
@@ -212,7 +212,7 @@ Code Commit → CodeBuild → CodeDeploy → Production
 ![AWS CDK Architecture](/images/Event-Participated/pic28.jpg)
 
 <figure>
-    <figcaption>AWS CDK framework showing language support (TypeScript, Python, Java) and construct-based approach for infrastructure definition</figcaption>
+    <figcaption>AWS CDK framework architecture demonstrating multi-language support (TypeScript, Python, Java, C#, Go) with three-level construct hierarchy for flexible infrastructure definition</figcaption>
 </figure>
 
 **Key Features:**
@@ -261,7 +261,7 @@ App (root of configuration)
 ![Docker and Microservices](/images/Event-Participated/pic29.jpg)
 
 <figure>
-    <figcaption>Docker containerization concepts and microservices architecture enabling scalable and portable applications</figcaption>
+    <figcaption>Docker containerization fundamentals showing image layers, container instances, and microservices architecture enabling portable, lightweight, and efficient application deployments</figcaption>
 </figure>
 
 **Containerization Benefits:**
@@ -302,7 +302,7 @@ App (root of configuration)
 ![ECS and Container Orchestration](/images/Event-Participated/pic30.jpg)
 
 <figure>
-    <figcaption>Amazon ECS architecture showing task definitions, services, and cluster management for containerized applications</figcaption>
+    <figcaption>Amazon ECS cluster orchestration showing task definitions, service configurations, auto-scaling policies, and load balancer integration for production container workloads</figcaption>
 </figure>
 
 **ECS Concepts:**
@@ -374,7 +374,7 @@ App (root of configuration)
 ![Microservices Architecture Patterns](/images/Event-Participated/pic31.jpg)
 
 <figure>
-    <figcaption>Microservices deployment patterns comparing ECS, EKS, and App Runner approaches for different application architectures</figcaption>
+    <figcaption>Microservices architecture patterns comparison showing ECS for simple services, EKS for complex distributed systems, and App Runner for rapid development deployments</figcaption>
 </figure>
 
 **Real-World Comparison:**
@@ -411,7 +411,7 @@ App (root of configuration)
 ![CloudWatch Monitoring Dashboard](/images/Event-Participated/pic32.jpg)
 
 <figure>
-    <figcaption>CloudWatch comprehensive monitoring showing metrics collection, log aggregation, and custom dashboard creation</figcaption>
+    <figcaption>CloudWatch unified monitoring console displaying real-time metrics, log insights queries, alarm configurations, and interactive dashboards for operational visibility</figcaption>
 </figure>
 
 **CloudWatch Components:**
@@ -447,7 +447,7 @@ App (root of configuration)
 ![AWS X-Ray Service Map](/images/Event-Participated/pic33.jpg)
 
 <figure>
-    <figcaption>AWS X-Ray distributed tracing showing service dependencies, response times, and error locations in microservices architecture</figcaption>
+    <figcaption>AWS X-Ray service map visualization displaying interconnected microservices, latency metrics, error highlighting in red, and performance bottleneck identification</figcaption>
 </figure>
 
 **X-Ray Capabilities:**
@@ -525,7 +525,7 @@ Application → X-Ray → Service Map
 ![Advanced Deployment Patterns](/images/Event-Participated/pic34.jpg)
 
 <figure>
-    <figcaption>Advanced deployment strategies showing feature flags, A/B testing, and progressive deployment techniques</figcaption>
+    <figcaption>Advanced deployment techniques including feature flags for controlled rollouts, A/B testing for user experience optimization, and progressive deployment with automated rollback</figcaption>
 </figure>
 
 **1. Feature Flags:**
@@ -611,7 +611,7 @@ if featureFlags.includes("newCheckout") {
 ![Startup DevOps Case Study](/images/Event-Participated/pic35.jpg)
 
 <figure>
-    <figcaption>Startup case study showing rapid scaling from manual deployments to automated CI/CD and infrastructure as code</figcaption>
+    <figcaption>E-commerce startup transformation case study demonstrating evolution from manual deployments to fully automated CI/CD pipelines, achieving 3x development velocity improvement</figcaption>
 </figure>
 
 **Scenario:** E-commerce startup growing from MVP to scale
@@ -649,7 +649,7 @@ if featureFlags.includes("newCheckout") {
 ![Enterprise DevOps Case Study](/images/Event-Participated/pic36.jpg)
 
 <figure>
-    <figcaption>Enterprise transformation case study implementing DevOps across multiple teams and legacy applications</figcaption>
+    <figcaption>Large enterprise transformation with 20+ teams implementing DevOps across legacy and modern applications, achieving weekly deployments and 70% time-to-market reduction</figcaption>
 </figure>
 
 **Scenario:** Large enterprise with 20+ development teams and mixed legacy/modern applications
@@ -827,7 +827,7 @@ This workshop provided crucial insights from the AWS Cloud Mastery series that f
 ![X-Ray Trace Visualization](/images/Event-Participated/pic37.jpg)
 
 <figure>
-    <figcaption>AWS X-Ray service map showing distributed traces, service dependencies, and performance metrics</figcaption>
+    <figcaption>X-Ray detailed trace visualization revealing request path through payment processing microservices, latency breakdown per service, and database query optimization opportunities</figcaption>
 </figure>
 
 - Database query performance analysis
