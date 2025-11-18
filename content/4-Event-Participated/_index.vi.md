@@ -47,10 +47,16 @@ Một hội thảo kỹ thuật toàn diện về xây dựng các tác nhân th
 
 ---
 
-#### Tại sao việc tham gia sự kiện quan trọng
-Tham gia các sự kiện AWS là rất quan trọng để cập nhật các công nghệ đám mây đang phát triển nhanh chóng. Những sự kiện này mang lại:
-- Tiếp cận trực tiếp với các chuyên gia AWS và kiến trúc sư giải pháp
-- Trải nghiệm thực hành với các dịch vụ và tính năng mới
-- Cơ hội kết nối với các chuyên gia đám mây đồng nghiệp
-- Các nghiên cứu điển hình thực tế và phương pháp hay nhất từ các nhà lãnh đạo trong ngành
+## [Sự kiện 4 - AWS Cloud Mastery Series #2](./4.4-Event4/)
+**DevOps on AWS - CI/CD Pipelines, Infrastructure as Code, Containers, and Observability**
+
+Một hội thảo kỹ thuật toàn diện cả ngày bao gồm toàn bộ vòng đời DevOps trên AWS. Sự kiện này cung cấp kiến thức thực tế về tự động hóa triển khai bằng CodePipeline, quản lý cơ sở hạ tầng thông qua mã bằng CloudFormation và CDK, đóng gói ứng dụng bằng Docker và dịch vụ AWS, và triển khai giám sát toàn diện bằng CloudWatch và X-Ray.
+
+- **Ngày:** 17 tháng 11 năm 2025
+- **Thời gian:** 8:30 AM – 5:00 PM
+- **Địa điểm:** AWS Event Center
+- **Trọng tâm:** CI/CD Pipelines, Infrastructure as Code, Dịch vụ Container (ECS, EKS, App Runner), CloudWatch, AWS X-Ray, DevOps Best Practices
+- **Những điểm chính:** Điều phối AWS CodePipeline, so sánh CloudFormation & CDK, Terraform cho đa đám mây, chiến lược triển khai container, phân tán tracing với X-Ray, biến đổi DevOps trong môi trường khởi nghiệp và doanh nghiệp
+
+---
 

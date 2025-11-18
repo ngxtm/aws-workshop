@@ -47,10 +47,13 @@ A comprehensive technical workshop on building intelligent agents and generative
 
 ---
 
-#### Why Event Participation Matters
-Participating in AWS events is crucial for staying current with rapidly evolving cloud technologies. These events provide:
-- Direct access to AWS experts and solution architects
-- Hands-on experience with new services and features
-- Networking opportunities with fellow cloud professionals
-- Real-world case studies and best practices from industry leaders
+## [Event 4 - AWS Cloud Mastery Series #2](./4.4-Event4/)
+**DevOps on AWS - CI/CD Pipelines, Infrastructure as Code, Containers, and Observability**
 
+A comprehensive all-day workshop covering the complete DevOps lifecycle on AWS. This event delivered practical knowledge on automating deployments with CodePipeline, managing infrastructure through code with CloudFormation and CDK, containerizing applications with Docker and AWS services, and implementing comprehensive monitoring with CloudWatch and X-Ray.
+
+- **Date:** November 17, 2025
+- **Time:** 8:30 AM – 5:00 PM
+- **Location:** AWS Event Center
+- **Focus:** CI/CD Pipelines, Infrastructure as Code, Container Services (ECS, EKS, App Runner), CloudWatch, AWS X-Ray, DevOps Best Practices
+- **Key Takeaways:** AWS CodePipeline orchestration, CloudFormation & CDK comparison, Terraform for multi-cloud, container deployment strategies, distributed tracing with X-Ray, DevOps transformations in startup and enterprise environments
