@@ -27,7 +27,11 @@ Một vài điều tạo nên sự khác biệt:
 - **Không chỉ đưa ra đáp án.** Các anh chị hướng dẫn mình tự tìm ra, giúp kiến thức thấm lâu hơn.
 - **Sẵn sàng hỗ trợ ngoài giờ.** Khi em bị stuck, các mentor sẵn sàng giúp đỡ ngay cả ngoài giờ làm việc.
 
-Đặc biệt cảm ơn hai "anh Thịnh" - một anh cực kỳ mạnh về technical (kiểu người biết AWS như lòng bàn tay), và anh còn lại thì siêu thân thiện và dễ gần (kiểu người làm mình thoải mái hỏi bất cứ điều gì). Có cả hai kiểu mentor xung quanh tạo nên môi trường học tập rất supportive.
+Đầu tiên và quan trọng nhất, em xin gửi lời cảm ơn đặc biệt đến **anh Hưng** - Solution Architect mạnh nhất Việt Nam của AWS, người tiên phong đi đầu để tạo ra cộng đồng này. Mỗi lần gặp anh Hưng hay trong mỗi công việc anh làm cho mọi người và cộng đồng, em đều thấy sự chuyên nghiệp và chỉnh chu của anh. Tầm nhìn và sự cống hiến của anh đã đặt nền móng cho tất cả những gì FCJ có được ngày hôm nay.
+
+Quan trọng không kém, xin cảm ơn **anh Kha** - học trò của anh Hưng, người đã tiếp nối và dẫn dắt FCJ đến thành công như ngày hôm nay. Anh Kha đã đưa ra những góp ý khách quan, tạo điều kiện và cơ hội để chúng em có được môi trường học tập đầy đủ như thế này. Ngoài ra, anh Kha còn rất vui tính, dễ thương và nhiệt tình nữa. Có những người leader như anh Hưng và anh Kha thực sự tạo nên sự khác biệt lớn.
+
+Cũng xin cảm ơn hai "anh Thịnh" - một anh cực kỳ mạnh về technical (kiểu người biết AWS như lòng bàn tay), và anh còn lại thì siêu thân thiện và dễ gần (kiểu người làm mình thoải mái hỏi bất cứ điều gì). Có sự kết hợp các mentor như vậy xung quanh tạo nên môi trường học tập rất supportive.
 
 #### 3. Liên quan đến chuyên ngành
 
@@ -94,4 +98,4 @@ Kỳ thực tập này vượt xa kỳ vọng của em. Em đến với hy vọn
 
 Team FCJ đã xây dựng một điều gì đó đặc biệt ở đây - một chương trình kết hợp học có cấu trúc với áp dụng thực tế, trong một môi trường supportive. Cho bất kỳ ai đang cân nhắc thực tập về cloud computing, đây là một lựa chọn solid.
 
-Cảm ơn mọi người tại FCJ đã làm cho trải nghiệm này có thể. Mong chờ những gì tiếp theo.
+Đặc biệt cảm ơn anh Hưng vì đã tiên phong xây dựng cộng đồng này, anh Kha vì sự dẫn dắt và tầm nhìn của anh, cùng tất cả các mentor và nhân viên tại FCJ đã làm cho trải nghiệm này có thể. Mong chờ những gì tiếp theo.

@@ -27,7 +27,11 @@ A few things that made the difference:
 - **They don't just give you answers.** They guide you to figure things out yourself, which helps the learning stick.
 - **Available beyond office hours.** When I was stuck on something, mentors were willing to help even outside regular working time.
 
-Special shoutout to the two "anh Thịnh" - one is incredibly strong on the technical side (the kind of person who knows AWS inside out), and the other is super friendly and approachable (the kind who makes you feel comfortable asking anything). Having both types of mentors around created a really supportive learning environment.
+First and foremost, a huge thank you to **anh Hưng** - Vietnam's top AWS Solution Architect and the pioneer who founded this community. Every interaction with anh Hưng shows his professionalism and attention to detail, whether in meetings or in the work he does for the community. His vision and dedication laid the foundation for everything FCJ has become today.
+
+Equally important, thank you to **anh Kha** - anh Hưng's mentee who has carried the torch and guided FCJ to where it is today. Anh Kha provided objective feedback, created opportunities, and built this incredible learning environment for us interns. Beyond the professional side, anh Kha is genuinely fun, warm-hearted, and always enthusiastic about helping others grow. Having leaders like anh Hưng and anh Kha makes all the difference.
+
+Also special thanks to the two "anh Thịnh" - one is incredibly strong on the technical side (the kind of person who knows AWS inside out), and the other is super friendly and approachable (the kind who makes you feel comfortable asking anything). Having this mix of mentors around created a really supportive learning environment.
 
 #### 3. Relevance to My Studies
 
@@ -94,4 +98,4 @@ This internship exceeded my expectations. I came in hoping to learn some AWS bas
 
 The FCJ team has built something special here - a program that combines structured learning with practical application, wrapped in a supportive environment. For anyone considering an internship in cloud computing, this is a solid choice.
 
-Thank you to everyone at FCJ who made this experience possible. Looking forward to what comes next.
+Special thanks to anh Hưng for pioneering this community, anh Kha for your leadership and vision, and to all the mentors and staff at FCJ who made this experience possible. Looking forward to what comes next.
