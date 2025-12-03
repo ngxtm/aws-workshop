@@ -86,41 +86,41 @@ Các lĩnh vực quan tâm chính để khám phá thêm:
 ### Hình ảnh Sự kiện
 
 #### Phiên Hội Thảo & Trình Bày
-![Diễn giả trình bày tại Cloud Day Vietnam AI Edition](/images/Event-Participated/pic1.png)
+![Diễn giả trình bày tại Cloud Day Vietnam AI Edition](/images/Event-Participated/Event-1/pic1.png)
 <figure>
     <figcaption>Diễn giả trình bày tại Cloud Day Vietnam AI Edition<figcaption>
 </figure>
 
 
-![Chia sẻ nội dung chuyên môn về AIDLC – Tasks](/images/Event-Participated/pic3.png)
+![Chia sẻ nội dung chuyên môn về AIDLC – Tasks](/images/Event-Participated/Event-1/pic3.png)
 <figure>
     <figcaption>Chia sẻ nội dung chuyên môn về AIDLC – Tasks<figcaption>
 </figure>
 
 #### Người Tham Dự & Quà Tặng
-![Người tham dự nhận quà lưu niệm từ AWS](/images/Event-Participated/pic2.png)
+![Người tham dự nhận quà lưu niệm từ AWS](/images/Event-Participated/Event-1/pic2.png)
 <figure>
     <figcaption>Người tham dự nhận quà lưu niệm từ AWS<figcaption>
 </figure>
 
 #### Networking & Giao Lưu
-![Không khí networking giữa các khách mời](/images/Event-Participated/pic4.png)
+![Không khí networking giữa các khách mời](/images/Event-Participated/Event-1/pic4.png)
 <figure>
     <figcaption>Không khí networking giữa các khách mời<figcaption>
 </figure>
 
 #### Không Gian & Ẩm Thực
-![Khu vực tiệc trà chuẩn bị trước giờ nghỉ giải lao](/images/Event-Participated/pic5.png)
+![Khu vực tiệc trà chuẩn bị trước giờ nghỉ giải lao](/images/Event-Participated/Event-1/pic5.png)
 <figure>
     <figcaption>Khu vực tiệc trà chuẩn bị trước giờ nghỉ giải lao<figcaption>
 </figure>
 
-![Buffet mặn phục vụ khách mời](/images/Event-Participated/pic6.png)
+![Buffet mặn phục vụ khách mời](/images/Event-Participated/Event-1/pic6.png)
 <figure>
     <figcaption>Buffet mặn phục vụ khách mời<figcaption>
 </figure>
 
-![Bàn trái cây tráng miệng](/images/Event-Participated/pic7.png)
+![Bàn trái cây tráng miệng](/images/Event-Participated/Event-1/pic7.png)
 <figure>
     <figcaption>Bàn trái cây tráng miệng<figcaption>
 </figure>

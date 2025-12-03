@@ -51,7 +51,7 @@ This comprehensive all-day workshop provided an in-depth exploration of DevOps p
 
 ##### Source Control
 
-![AWS CI/CD Pipeline Architecture](/images/Event-Participated/pic24.jpg)
+![AWS CI/CD Pipeline Architecture](/images/Event-Participated/Event-4/pic24.jpg)
 
 <figure>
     <figcaption>AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline integration showcasing the seamless CI/CD workflow with source control triggering automated tests and deployments</figcaption>
@@ -90,7 +90,7 @@ This comprehensive all-day workshop provided an in-depth exploration of DevOps p
 
 **Build Pipeline Configuration:**
 
-![AWS CodeBuild Configuration](/images/Event-Participated/pic25.jpg)
+![AWS CodeBuild Configuration](/images/Event-Participated/Event-4/pic25.jpg)
 
 <figure>
     <figcaption>CodeBuild environment configuration with build specifications, environment variables, and Docker container setup for consistent build processes across development and production</figcaption>
@@ -125,7 +125,7 @@ This comprehensive all-day workshop provided an in-depth exploration of DevOps p
 - Advantages: Zero downtime, quick rollback capability
 - Use case: Critical applications requiring instant availability
 
-![Blue-Green Deployment Strategy](/images/Event-Participated/pic26.jpg)
+![Blue-Green Deployment Strategy](/images/Event-Participated/Event-4/pic26.jpg)
 
 <figure>
     <figcaption>Blue-Green deployment architecture with production traffic routing from stable blue environment to newly deployed green environment, enabling instant rollback capabilities</figcaption>
@@ -177,7 +177,7 @@ Code Commit → CodeBuild → CodeDeploy → Production
 
 #### Infrastructure as Code (IaC) - 10:45 AM – 12:00 PM
 
-![Infrastructure as Code Concepts](/images/Event-Participated/pic27.jpg)
+![Infrastructure as Code Concepts](/images/Event-Participated/Event-4/pic27.jpg)
 
 <figure>
     <figcaption>Infrastructure as Code paradigm demonstration comparing declarative CloudFormation templates with programmatic CDK approaches for reproducible infrastructure deployments</figcaption>
@@ -209,7 +209,7 @@ Code Commit → CodeBuild → CodeDeploy → Production
 
 **AWS CDK (Cloud Development Kit):**
 
-![AWS CDK Architecture](/images/Event-Participated/pic28.jpg)
+![AWS CDK Architecture](/images/Event-Participated/Event-4/pic28.jpg)
 
 <figure>
     <figcaption>AWS CDK framework architecture demonstrating multi-language support (TypeScript, Python, Java, C#, Go) with three-level construct hierarchy for flexible infrastructure definition</figcaption>
@@ -258,7 +258,7 @@ App (root of configuration)
 
 **Docker Fundamentals:**
 
-![Docker and Microservices](/images/Event-Participated/pic29.jpg)
+![Docker and Microservices](/images/Event-Participated/Event-4/pic29.jpg)
 
 <figure>
     <figcaption>Docker containerization fundamentals showing image layers, container instances, and microservices architecture enabling portable, lightweight, and efficient application deployments</figcaption>
@@ -299,7 +299,7 @@ App (root of configuration)
 
 **Amazon ECS (Elastic Container Service):**
 
-![ECS and Container Orchestration](/images/Event-Participated/pic30.jpg)
+![ECS and Container Orchestration](/images/Event-Participated/Event-4/pic30.jpg)
 
 <figure>
     <figcaption>Amazon ECS cluster orchestration showing task definitions, service configurations, auto-scaling policies, and load balancer integration for production container workloads</figcaption>
@@ -371,7 +371,7 @@ App (root of configuration)
 
 #### Demo & Case Study: Microservices Deployment Comparison
 
-![Microservices Architecture Patterns](/images/Event-Participated/pic31.jpg)
+![Microservices Architecture Patterns](/images/Event-Participated/Event-4/pic31.jpg)
 
 <figure>
     <figcaption>Microservices architecture patterns comparison showing ECS for simple services, EKS for complex distributed systems, and App Runner for rapid development deployments</figcaption>
@@ -408,7 +408,7 @@ App (root of configuration)
 
 **Amazon CloudWatch:**
 
-![CloudWatch Monitoring Dashboard](/images/Event-Participated/pic32.jpg)
+![CloudWatch Monitoring Dashboard](/images/Event-Participated/Event-4/pic32.jpg)
 
 <figure>
     <figcaption>CloudWatch unified monitoring console displaying real-time metrics, log insights queries, alarm configurations, and interactive dashboards for operational visibility</figcaption>
@@ -444,7 +444,7 @@ App (root of configuration)
 
 **AWS X-Ray:**
 
-![AWS X-Ray Service Map](/images/Event-Participated/pic33.jpg)
+![AWS X-Ray Service Map](/images/Event-Participated/Event-4/pic33.jpg)
 
 <figure>
     <figcaption>AWS X-Ray service map visualization displaying interconnected microservices, latency metrics, error highlighting in red, and performance bottleneck identification</figcaption>
@@ -522,7 +522,7 @@ Application → X-Ray → Service Map
 
 **Deployment Strategies Beyond Basic Approaches:**
 
-![Advanced Deployment Patterns](/images/Event-Participated/pic34.jpg)
+![Advanced Deployment Patterns](/images/Event-Participated/Event-4/pic34.jpg)
 
 <figure>
     <figcaption>Advanced deployment techniques including feature flags for controlled rollouts, A/B testing for user experience optimization, and progressive deployment with automated rollback</figcaption>
@@ -608,7 +608,7 @@ if featureFlags.includes("newCheckout") {
 
 **Case Study 1: Startup DevOps Transformation**
 
-![Startup DevOps Case Study](/images/Event-Participated/pic35.jpg)
+![Startup DevOps Case Study](/images/Event-Participated/Event-4/pic35.jpg)
 
 <figure>
     <figcaption>E-commerce startup transformation case study demonstrating evolution from manual deployments to fully automated CI/CD pipelines, achieving 3x development velocity improvement</figcaption>
@@ -646,7 +646,7 @@ if featureFlags.includes("newCheckout") {
 
 **Case Study 2: Enterprise DevOps Transformation**
 
-![Enterprise DevOps Case Study](/images/Event-Participated/pic36.jpg)
+![Enterprise DevOps Case Study](/images/Event-Participated/Event-4/pic36.jpg)
 
 <figure>
     <figcaption>Large enterprise transformation with 20+ teams implementing DevOps across legacy and modern applications, achieving weekly deployments and 70% time-to-market reduction</figcaption>
@@ -824,7 +824,7 @@ This workshop provided crucial insights from the AWS Cloud Mastery series that f
 
 **3. Performance Analysis:**
 
-![X-Ray Trace Visualization](/images/Event-Participated/pic37.jpg)
+![X-Ray Trace Visualization](/images/Event-Participated/Event-4/pic37.jpg)
 
 <figure>
     <figcaption>X-Ray detailed trace visualization revealing request path through payment processing microservices, latency breakdown per service, and database query optimization opportunities</figcaption>

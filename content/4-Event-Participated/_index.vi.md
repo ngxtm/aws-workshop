@@ -60,3 +60,16 @@ Một hội thảo kỹ thuật toàn diện cả ngày bao gồm toàn bộ vò
 
 ---
 
+## [Sự kiện 5 - AWS Cloud Mastery Series #3](./4.5-Event5/)
+**AWS Well-Architected Security Pillar - IAM, Detection, Infrastructure Protection, Data Protection, Incident Response**
+
+Một hội thảo nửa ngày tập trung vào Security Pillar của AWS Well-Architected Framework. Buổi học bao gồm năm trụ cột chính với demo thực hành: IAM best practices, detection với CloudTrail và GuardDuty, infrastructure protection với VPC và WAF, data protection với KMS, và automated incident response.
+
+- **Ngày:** 29 tháng 11 năm 2025
+- **Thời gian:** 8:30 AM – 12:00 PM
+- **Địa điểm:** Văn phòng AWS Việt Nam
+- **Trọng tâm:** IAM Identity Center, Access Analyzer, GuardDuty, Security Hub, KMS, Secrets Manager, Incident Response Playbooks
+- **Những điểm chính:** Loại bỏ long-term credentials, Detection-as-Code, automated incident response với Step Functions, chiến lược defense in depth, phương pháp Security Pillar review
+
+---
+

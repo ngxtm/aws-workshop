@@ -86,41 +86,41 @@ Key areas of interest for further exploration:
 ### Event Photos
 
 #### Conference Sessions & Presentations
-![Speaker presenting at Cloud Day Vietnam AI Edition](/images/Event-Participated/pic1.png)
+![Speaker presenting at Cloud Day Vietnam AI Edition](/images/Event-Participated/Event-1/pic1.png)
 <figure>
     <figcaption>Speaker presenting at Cloud Day Vietnam AI Edition<figcaption>
 </figure>
 
 
-![Sharing technical content on AIDLC – Tasks](/images/Event-Participated/pic3.png)
+![Sharing technical content on AIDLC – Tasks](/images/Event-Participated/Event-1/pic3.png)
 <figure>
     <figcaption>Sharing technical content on AIDLC – Tasks<figcaption>
 </figure>
 
 #### Attendees & Giveaways
-![Attendees receiving souvenirs from AWS](/images/Event-Participated/pic2.png)
+![Attendees receiving souvenirs from AWS](/images/Event-Participated/Event-1/pic2.png)
 <figure>
     <figcaption>Attendees receiving souvenirs from AWS<figcaption>
 </figure>
 
 #### Networking & Interactions
-![Networking atmosphere among guests](/images/Event-Participated/pic4.png)
+![Networking atmosphere among guests](/images/Event-Participated/Event-1/pic4.png)
 <figure>
     <figcaption>Networking atmosphere among guests<figcaption>
 </figure>
 
 #### Venue & Catering
-![Tea party area prepared before break time](/images/Event-Participated/pic5.png)
+![Tea party area prepared before break time](/images/Event-Participated/Event-1/pic5.png)
 <figure>
     <figcaption>Tea party area prepared before break time<figcaption>
 </figure>
 
-![Savory buffet serving guests](/images/Event-Participated/pic6.png)
+![Savory buffet serving guests](/images/Event-Participated/Event-1/pic6.png)
 <figure>
     <figcaption>Savory buffet serving guests<figcaption>
 </figure>
 
-![Dessert fruit table](/images/Event-Participated/pic7.png)
+![Dessert fruit table](/images/Event-Participated/Event-1/pic7.png)
 <figure>
     <figcaption>Dessert fruit table<figcaption>
 </figure>

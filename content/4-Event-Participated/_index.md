@@ -57,3 +57,16 @@ A comprehensive all-day workshop covering the complete DevOps lifecycle on AWS. 
 - **Location:** AWS Event Center
 - **Focus:** CI/CD Pipelines, Infrastructure as Code, Container Services (ECS, EKS, App Runner), CloudWatch, AWS X-Ray, DevOps Best Practices
 - **Key Takeaways:** AWS CodePipeline orchestration, CloudFormation & CDK comparison, Terraform for multi-cloud, container deployment strategies, distributed tracing with X-Ray, DevOps transformations in startup and enterprise environments
+
+---
+
+## [Event 5 - AWS Cloud Mastery Series #3](./4.5-Event5/)
+**AWS Well-Architected Security Pillar - IAM, Detection, Infrastructure Protection, Data Protection, Incident Response**
+
+A half-day workshop focused on the Security Pillar of the AWS Well-Architected Framework. The session covered five core pillars with practical demonstrations: IAM best practices, detection with CloudTrail and GuardDuty, infrastructure protection with VPC and WAF, data protection with KMS, and automated incident response.
+
+- **Date:** November 29, 2025
+- **Time:** 8:30 AM – 12:00 PM
+- **Location:** AWS Vietnam Office
+- **Focus:** IAM Identity Center, Access Analyzer, GuardDuty, Security Hub, KMS, Secrets Manager, Incident Response Playbooks
+- **Key Takeaways:** Eliminate long-term credentials, Detection-as-Code, automated incident response with Step Functions, defense in depth strategy, Security Pillar review methodology

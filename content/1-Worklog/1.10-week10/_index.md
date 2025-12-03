@@ -6,24 +6,84 @@ chapter: false
 pre: " <b> 1.10 </b> "
 ---
 
-### Week 10 Objective: Monitoring & Advanced Security
-
-This week we accelerate by combining two critical areas: Monitoring and Advanced Security, to be ready for the project kickoff next week.
+### Week 10 Objectives:
+- Develop backend - Hybrid Search Engine (Text search + semantic search)
+- Practice Lab 22-25: Serverless, API Gateway, CI/CD, CloudWatch, X-Ray
+- Research and implement hybrid search for MapVibe
 
 ### Tasks to complete this week:
 
-| Day | Task                                                                                                                                                              | Start Date | Completion Date | References                                                     |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | -------------------------------------------------------------- |
-| Mon | - **CloudWatch & Observability**:<br>&emsp; + Metrics & Dashboards<br>&emsp; + CloudWatch Logs Insights<br>&emsp; + Set up Alarms                                 | 10/11/2025 | 10/11/2025      | [AWS CloudWatch Docs](https://docs.aws.amazon.com/cloudwatch/) |
-| Tue | - **AWS X-Ray (Tracing)**:<br>&emsp; + Trace requests across services<br>&emsp; + Debug latency<br>&emsp; + Service Map                                           | 11/11/2025 | 11/11/2025      |                                                                |
-| Wed | - **Web Application Firewall (WAF)**:<br>&emsp; + Protect API Gateway<br>&emsp; + Block SQL Injection, XSS<br>&emsp; + Rate Limiting                              | 12/11/2025 | 12/11/2025      | [AWS WAF Docs](https://docs.aws.amazon.com/waf/)               |
-| Thu | - **Data Security (KMS & Secrets)**:<br>&emsp; + KMS: Data Encryption (S3, RDS)<br>&emsp; + Secrets Manager: Manage DB Credentials<br>&emsp; + Parameter Store    | 13/11/2025 | 13/11/2025      |                                                                |
-| Fri | - **IAM Best Practices**:<br>&emsp; + Principle of Least Privilege<br>&emsp; + IAM Roles for Service Accounts<br>&emsp; + Review permissions before project start | 14/11/2025 | 14/11/2025      |                                                                |
-| Sat | - **Comprehensive Lab**:<br>&emsp; + Setup CloudWatch Alarm for Lambda<br>&emsp; + Configure WAF to block suspicious IPs                                          | 15/11/2025 | 15/11/2025      |                                                                |
-| Sun | - **Rest & Project Prep**:<br>&emsp; + Review all knowledge from past 10 weeks<br>&emsp; + Ready for "MapVibe" next week                                          | 16/11/2025 | 16/11/2025      |                                                                |
+| Day | Task | Start Date | Completion Date | References |
+|---|---|---|---|---|
+| 2 | - Team project meeting: Develop backend - Hybrid Search Engine<br>&emsp; + Research best practices, papers on hybrid search engine<br>&emsp; + Design preliminary architecture for hybrid search engine | 10/11/2025 | 10/11/2025 | [Hybrid Search Paper](https://arxiv.org/pdf/2408.09236) |
+| 3 | - Practice Lab 22: Serverless - Lambda interaction with S3 and DynamoDB<br>&emsp; + Process and Optimize Image Size on AWS<br>&emsp; + Create Lambda Function for Image Processing, S3 Bucket<br>&emsp; + Write data to Amazon DynamoDB | 11/11/2025 | 11/11/2025 | [Lab 22](https://000078.awsstudygroup.com/vi/) |
+| 4 | - Practice Lab 23: Serverless - Guide to writing Front-end calling API Gateway<br>&emsp; + Deploy Lambda function (write, read, delete data)<br>&emsp; + Setup API Gateway, create methods<br>&emsp; + Install and enable CORS<br>&emsp; + Test API with Postman and front-end | 12/11/2025 | 12/11/2025 | [Lab 23](https://000079.awsstudygroup.com/vi/) |
+| 5 | - Team project meeting: Develop backend - Hybrid Search Engine<br>&emsp; + Run and test hybrid search engine with collected data<br>&emsp; + Complete hybrid search engine architecture | 13/11/2025 | 13/11/2025 | [Supabase Hybrid Search](https://supabase.com/docs/guides/ai/hybrid-search) |
+| 6 | - Practice Lab 24: Serverless - CI/CD with CodePipeline<br>&emsp; + Create Git repo, SAM pipeline<br>&emsp; + Build pipeline for front-end<br>- Practice Lab 25: Serverless - Monitor with CloudWatch and X-Ray<br>&emsp; + Debug with CloudWatch Logs<br>&emsp; + Create custom metrics, CloudWatch Alarm<br>&emsp; + Trace with X-ray | 14/11/2025 | 14/11/2025 | [Lab 24](https://000084.awsstudygroup.com/vi/)<br>[Lab 25](https://000085.awsstudygroup.com/vi/) |
 
 ### Week 10 Achievements:
 
-- Understood how to monitor system health.
-- Understood necessary security layers for Web apps.
-- Completed learning path, transitioning to project phase.
+#### **Team Project - Hybrid Search Engine Development**
+- **Daily Meeting (4/11)**: Plan processing query feature
+  - Mục tiêu: Query phải xử lý được vị trí địa lý (Quận 1, gần tôi) + semantic meaning
+  - Concern: Độ chính xác của query results
+- **Research Phase**:
+  - Đọc paper về hybrid search: [Hybrid Search](https://arxiv.org/pdf/2408.09236)
+  - Tham khảo Supabase hybrid search implementation
+  - **Key insight**: Pure vector search miss keyword matches, pure text search miss semantic similar
+- **Architecture Design**:
+  ```
+  Query → [Text Search (BM25)] → Score A
+        → [Vector Search]      → Score B
+        → RRF Fusion           → Final Ranking
+  ```
+- **Implementation với PostgreSQL**:
+  - Full-text search: `to_tsvector('vietnamese', description) @@ plainto_tsquery('vietnamese', query)`
+  - Vector search: `embedding <-> query_embedding` với pgvector
+  - **RRF (Reciprocal Rank Fusion)**: `1/(k + rank_a) + 1/(k + rank_b)` với k=60
+  - Geospatial filter: `ST_DWithin(location, user_location, radius_meters)`
+- **Testing Results**:
+  - Query "quán cafe yên tĩnh quận 1" → Top 5 results relevant
+  - Query "chỗ ăn sáng gần đây ngon" → Results sorted by distance + rating
+  - **Performance**: <100ms cho 10k records với proper indexing
+
+#### **Lab 22: Serverless - Lambda + S3 + DynamoDB**
+- **Image Processing Pipeline**:
+  - S3 trigger Lambda khi upload image
+  - Lambda resize image (thumbnail, medium, large)
+  - Store metadata trong DynamoDB
+  - **Tip**: Set Lambda memory 1024MB+ cho image processing, CPU scales với memory
+- **DynamoDB Patterns**:
+  - Single-table design: PK = `PLACE#123`, SK = `REVIEW#456`
+  - GSI cho query by different access patterns
+  - **Gotcha**: DynamoDB scan = expensive, always use query với key conditions
+
+#### **Lab 23: API Gateway + Lambda**
+- **REST API Setup**:
+  - Lambda Proxy Integration: API Gateway pass entire request to Lambda
+  - Method: GET /places, POST /places, GET /places/{id}
+  - **CORS config**: Allow-Origin, Allow-Methods, Allow-Headers - quan trọng cho frontend!
+- **Testing Workflow**:
+  - Postman collection với environment variables
+  - Test từng endpoint trước khi integrate frontend
+  - **Tip**: Enable CloudWatch Logs cho API Gateway để debug integration issues
+
+#### **Lab 24 & 25: CI/CD + Monitoring**
+- **SAM Pipeline**:
+  - `sam init` → `sam build` → `sam deploy`
+  - Pipeline stages: Source → Build → Test → Deploy (Dev) → Approve → Deploy (Prod)
+  - **Benefit**: Infrastructure và application code cùng repo, deploy together
+- **CloudWatch Deep Dive**:
+  - **Logs Insights query**:
+    ```
+    fields @timestamp, @message
+    | filter @message like /ERROR/
+    | sort @timestamp desc
+    | limit 20
+    ```
+  - **Custom Metrics**: `put-metric-data` cho business metrics (orders/minute, search latency)
+  - **Alarms**: Lambda errors > 5 trong 5 phút → SNS notification
+- **X-Ray Tracing**:
+  - Visualize request flow: API Gateway → Lambda → DynamoDB
+  - Identify bottlenecks: Thấy DynamoDB query slow → Add GSI
+  - **Service Map**: Overview toàn bộ architecture, dependencies

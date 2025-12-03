@@ -26,7 +26,7 @@ This workshop provided a comprehensive deep dive into Amazon Bedrock and its cap
 
 ##### Prompting Techniques: Zero-Shot Prompting
 
-![Prompting Techniques: Zero-Shot Prompting Presentation](/images/Event-Participated/pic8.jpg)
+![Prompting Techniques: Zero-Shot Prompting Presentation](/images/Event-Participated/Event-3/pic8.jpg)
 
 <figure>
     <figcaption>Technical presentation on Prompting Techniques focusing on Zero-Shot Prompting methods, including classification techniques and text input strategies for effective prompt engineering<figcaption>
@@ -60,7 +60,7 @@ Essential techniques for effective model interactions:
 
 ##### Retrieval-Augmented Generation Deep Dive
 
-![Text Generation Workflow - RAG Architecture Deep Dive](/images/Event-Participated/pic9.jpg)
+![Text Generation Workflow - RAG Architecture Deep Dive](/images/Event-Participated/Event-3/pic9.jpg)
 
 <figure>
     <figcaption>Detailed explanation of Text Generation Workflow showing RAG (Retrieval-Augmented Generation) architecture components including embeddings model, vector store, semantic search, context augmentation, and data retrieval workflow<figcaption>
@@ -96,7 +96,7 @@ Essential techniques for effective model interactions:
 
 ##### Comprehensive Agentic Platform Components
 
-![Amazon Bedrock AgentCore - Component Architecture](/images/Event-Participated/pic17.jpg)
+![Amazon Bedrock AgentCore - Component Architecture](/images/Event-Participated/Event-3/pic17.jpg)
 
 <figure>
     <figcaption>Amazon Bedrock AgentCore - Comprehensive agentic platform showing core components: Runtime, Memory, Identity, Gateway, Code Interpreter, Browser Tool, and Observability for production-ready agent deployment<figcaption>
@@ -118,7 +118,7 @@ Essential techniques for effective model interactions:
 
 ##### Services Enabling Agents at Scale
 
-![AgentCore Services - Architecture for Scale](/images/Event-Participated/pic18.jpg)
+![AgentCore Services - Architecture for Scale](/images/Event-Participated/Event-3/pic18.jpg)
 
 <figure>
     <figcaption>AgentCore services architecture showing how agents scale with Framework, Agent Instruction, Agent local tools, Agent context, AgentCore Gateway, Browser, Code Interpreter, Identity, Memory, and Observability components working together<figcaption>
@@ -150,7 +150,7 @@ Essential techniques for effective model interactions:
 
 ##### Production Challenges & Solutions
 
-![Prototype to Production - The Chasm](/images/Event-Participated/pic19.jpg)
+![Prototype to Production - The Chasm](/images/Event-Participated/Event-3/pic19.jpg)
 
 <figure>
     <figcaption>The prototype to production "chasm" illustrating the challenges of moving from POC (Proof of Concept) to production AI agents, including Performance, Scalability, Security, Governance, and achieving meaningful business value<figcaption>
@@ -189,7 +189,7 @@ Essential techniques for effective model interactions:
 
 ##### Knowledge Bases for Amazon Bedrock
 
-![RetrieveAndGenerate API - Knowledge Bases Implementation](/images/Event-Participated/pic20.jpg)
+![RetrieveAndGenerate API - Knowledge Bases Implementation](/images/Event-Participated/Event-3/pic20.jpg)
 
 <figure>
     <figcaption>RetrieveAndGenerate API for Knowledge Bases showing the complete flow: user input, query generation with embeddings, document retrieval, context augmentation, and response generation from LLM<figcaption>
@@ -225,7 +225,7 @@ Essential techniques for effective model interactions:
 
 ##### Open Source Agent Frameworks
 
-![Frameworks for Building Agents - Ecosystem Overview](/images/Event-Participated/pic21.jpg)
+![Frameworks for Building Agents - Ecosystem Overview](/images/Event-Participated/Event-3/pic21.jpg)
 
 <figure>
     <figcaption>Comprehensive overview of open source frameworks and SDKs for building agents including Strands, LangGraph, LangChain, Crew.ai, Google ADK, LlamaIndex, and more<figcaption>
@@ -266,7 +266,7 @@ Essential techniques for effective model interactions:
 
 ##### Comprehensive Suite of AI/ML Services
 
-![AWS AI Services - Comprehensive Service Portfolio](/images/Event-Participated/pic22.jpg)
+![AWS AI Services - Comprehensive Service Portfolio](/images/Event-Participated/Event-3/pic22.jpg)
 
 <figure>
     <figcaption>AWS AI services ecosystem including Rekognition (vision), Translate (language), Textract (document), Transcribe (speech-to-text), Polly (text-to-speech), Comprehend (NLP), Kendra (search), Lookout (anomaly), and Personalize (recommendations)<figcaption>
@@ -298,7 +298,7 @@ Essential techniques for effective model interactions:
 
 ##### Amazon Bedrock AgentCore Opening Keynote
 
-![Amazon Bedrock AgentCore Opening - Danh Hoang Hieu Nghi](/images/Event-Participated/pic13.jpg)
+![Amazon Bedrock AgentCore Opening - Danh Hoang Hieu Nghi](/images/Event-Participated/Event-3/pic13.jpg)
 
 <figure>
     <figcaption>Opening keynote on Amazon Bedrock AgentCore presented by Danh Hoang Hieu Nghi (AI Engineer, Renova Cloud), introducing core concepts of intelligent agent architecture and multi-step workflow orchestration<figcaption>
@@ -314,7 +314,7 @@ Essential techniques for effective model interactions:
 
 ##### AWS AI Services Overview
 
-![AWS AI Services Presentation - Other Pretrained AI Services](/images/Event-Participated/pic14.jpg)
+![AWS AI Services Presentation - Other Pretrained AI Services](/images/Event-Participated/Event-3/pic14.jpg)
 
 <figure>
     <figcaption>Technical presentation on Other Pretrained AI Services including Rekognition, Polly, Transcribe, and Comprehend, showcasing AWS's comprehensive AI/ML service ecosystem for real-world applications<figcaption>
@@ -331,7 +331,7 @@ Essential techniques for effective model interactions:
 
 ##### Generative AI with Amazon Bedrock - Multi-Speaker Panel
 
-![Multi-Speaker Panel - Generative AI with Amazon Bedrock](/images/Event-Participated/pic15.jpg)
+![Multi-Speaker Panel - Generative AI with Amazon Bedrock](/images/Event-Participated/Event-3/pic15.jpg)
 
 <figure>
     <figcaption>Multi-speaker panel discussion on Generative AI with Amazon Bedrock featuring Lam Tuan Kiet (Senior DevOps Engineer FPT Software), Dinh Le Hoang Anh (Cloud Engineer Trainee), and other speakers discussing practical implementations and best practices<figcaption>
@@ -348,7 +348,7 @@ Essential techniques for effective model interactions:
 
 ##### Workshop Team Photo
 
-![Workshop Team Photo - AWS Cloud Mastery Event](/images/Event-Participated/pic16.jpg)
+![Workshop Team Photo - AWS Cloud Mastery Event](/images/Event-Participated/Event-3/pic16.jpg)
 
 <figure>
     <figcaption>Group photo of workshop participants and speakers in front of the Kahoot interactive display, representing the collaborative learning environment and successful completion of the AWS Cloud Mastery Series #1 event<figcaption>
@@ -360,19 +360,19 @@ Essential techniques for effective model interactions:
 
 ##### Workshop Sessions & Interactive Learning
 
-![Technical Workshop Session](/images/Event-Participated/pic10.jpg)
+![Technical Workshop Session](/images/Event-Participated/Event-3/pic10.jpg)
 
 <figure>
     <figcaption>Workshop presentation on advanced AI/ML techniques and AWS service integration<figcaption>
 </figure>
 
-![Live Technical Demonstrations](/images/Event-Participated/pic11.jpg)
+![Live Technical Demonstrations](/images/Event-Participated/Event-3/pic11.jpg)
 
 <figure>
     <figcaption>Attendees engaged in technical presentations and learning about AWS AI services<figcaption>
 </figure>
 
-![Workshop Community & Knowledge Sharing](/images/Event-Participated/pic12.jpg)
+![Workshop Community & Knowledge Sharing](/images/Event-Participated/Event-3/pic12.jpg)
 
 <figure>
     <figcaption>Workshop participants engaging in discussion and knowledge exchange during the AWS Cloud Mastery event<figcaption>

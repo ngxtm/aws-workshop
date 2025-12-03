@@ -26,7 +26,7 @@ Hội thảo này cung cấp một cái nhìn sâu sắc toàn diện về Amazo
 
 ##### Kỹ thuật Prompting: Zero-Shot Prompting
 
-![Kỹ thuật Prompting: Trình bày Zero-Shot Prompting](/images/Event-Participated/pic8.jpg)
+![Kỹ thuật Prompting: Trình bày Zero-Shot Prompting](/images/Event-Participated/Event-3/pic8.jpg)
 
 <figure>
     <figcaption>Bài thuyết trình kỹ thuật về Kỹ thuật Prompting tập trung vào các phương pháp Zero-Shot Prompting, bao gồm các kỹ thuật phân loại và chiến lược nhập văn bản cho prompt engineering hiệu quả<figcaption>
@@ -60,7 +60,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Chuyên sâu Retrieval-Augmented Generation
 
-![Quy trình Tạo Văn bản - Chuyên sâu Kiến trúc RAG](/images/Event-Participated/pic9.jpg)
+![Quy trình Tạo Văn bản - Chuyên sâu Kiến trúc RAG](/images/Event-Participated/Event-3/pic9.jpg)
 
 <figure>
     <figcaption>Giải thích chi tiết về Quy trình Tạo Văn bản hiển thị các thành phần kiến trúc RAG (Retrieval-Augmented Generation) bao gồm mô hình embeddings, vector store, tìm kiếm ngữ nghĩa, tăng cường ngữ cảnh, và quy trình truy xuất dữ liệu<figcaption>
@@ -96,7 +96,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Các Thành phần Nền tảng Agentic Toàn diện
 
-![Amazon Bedrock AgentCore - Kiến trúc Thành phần](/images/Event-Participated/pic17.jpg)
+![Amazon Bedrock AgentCore - Kiến trúc Thành phần](/images/Event-Participated/Event-3/pic17.jpg)
 
 <figure>
     <figcaption>Amazon Bedrock AgentCore - Nền tảng agentic toàn diện hiển thị các thành phần cốt lõi: Runtime, Memory, Identity, Gateway, Code Interpreter, Browser Tool, và Observability cho triển khai tác nhân sản xuất sẵn sàng<figcaption>
@@ -118,7 +118,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Dịch vụ Cho phép Tác nhân Mở rộng Quy mô
 
-![Dịch vụ AgentCore - Kiến trúc Mở rộng Quy mô](/images/Event-Participated/pic18.jpg)
+![Dịch vụ AgentCore - Kiến trúc Mở rộng Quy mô](/images/Event-Participated/Event-3/pic18.jpg)
 
 <figure>
     <figcaption>Kiến trúc dịch vụ AgentCore hiển thị cách các tác nhân mở rộng với Framework, Agent Instruction, Agent local tools, Agent context, AgentCore Gateway, Browser, Code Interpreter, Identity, Memory, và Observability cùng hoạt động<figcaption>
@@ -150,7 +150,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Thách thức Sản xuất & Giải pháp
 
-![Nguyên mẫu đến Sản xuất - Khoảng cách](/images/Event-Participated/pic19.jpg)
+![Nguyên mẫu đến Sản xuất - Khoảng cách](/images/Event-Participated/Event-3/pic19.jpg)
 
 <figure>
     <figcaption>Khoảng cách từ nguyên mẫu đến sản xuất minh họa các thách thức khi chuyển từ POC (Proof of Concept) sang tác nhân AI sản xuất, bao gồm Performance, Scalability, Security, Governance, và đạt được giá trị kinh doanh có ý nghĩa<figcaption>
@@ -189,7 +189,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Cơ sở Kiến thức cho Amazon Bedrock
 
-![API RetrieveAndGenerate - Triển khai Cơ sở Kiến thức](/images/Event-Participated/pic20.jpg)
+![API RetrieveAndGenerate - Triển khai Cơ sở Kiến thức](/images/Event-Participated/Event-3/pic20.jpg)
 
 <figure>
     <figcaption>API RetrieveAndGenerate cho Cơ sở Kiến thức hiển thị luồng hoàn chỉnh: nhập người dùng, tạo truy vấn với embeddings, truy xuất tài liệu, tăng cường bối cảnh, và tạo phản ứng từ LLM<figcaption>
@@ -225,7 +225,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Khung Tác nhân Mã nguồn Mở
 
-![Khung Xây dựng Tác nhân - Tổng quan Hệ sinh thái](/images/Event-Participated/pic21.jpg)
+![Khung Xây dựng Tác nhân - Tổng quan Hệ sinh thái](/images/Event-Participated/Event-3/pic21.jpg)
 
 <figure>
     <figcaption>Tổng quan toàn diện về các khung xây dựng và SDK mã nguồn mở cho tác nhân bao gồm Strands, LangGraph, LangChain, Crew.ai, Google ADK, LlamaIndex, và hơn thế nữa<figcaption>
@@ -266,7 +266,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Bộ Dịch vụ AI/ML Toàn diện
 
-![Dịch vụ AI AWS - Danh mục Dịch vụ Toàn diện](/images/Event-Participated/pic22.jpg)
+![Dịch vụ AI AWS - Danh mục Dịch vụ Toàn diện](/images/Event-Participated/Event-3/pic22.jpg)
 
 <figure>
     <figcaption>Hệ sinh thái dịch vụ AI AWS bao gồm Rekognition (thị giác), Translate (ngôn ngữ), Textract (tài liệu), Transcribe (giọng nói sang văn bản), Polly (văn bản sang giọng nói), Comprehend (NLP), Kendra (tìm kiếm), Lookout (bất thường), và Personalize (đề xuất)<figcaption>
@@ -298,7 +298,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Bài thuyết trình Khai mạc Amazon Bedrock AgentCore
 
-![Amazon Bedrock AgentCore Khai mạc - Danh Hoang Hieu Nghi](/images/Event-Participated/pic13.jpg)
+![Amazon Bedrock AgentCore Khai mạc - Danh Hoang Hieu Nghi](/images/Event-Participated/Event-3/pic13.jpg)
 
 <figure>
     <figcaption>Bài thuyết trình chính về Amazon Bedrock AgentCore được trình bày bởi Danh Hoang Hieu Nghi (Kỹ sư AI, Renova Cloud), giới thiệu các khái niệm cốt lõi về kiến trúc tác nhân thông minh và điều phối quy trình công việc đa bước<figcaption>
@@ -314,7 +314,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Tổng quan Dịch vụ AI AWS
 
-![Trình bày Dịch vụ AI AWS - Các Dịch vụ AI Được Đào tạo Trước Khác](/images/Event-Participated/pic14.jpg)
+![Trình bày Dịch vụ AI AWS - Các Dịch vụ AI Được Đào tạo Trước Khác](/images/Event-Participated/Event-3/pic14.jpg)
 
 <figure>
     <figcaption>Bài thuyết trình kỹ thuật về Các Dịch vụ AI Được Đào tạo Trước bao gồm Rekognition, Polly, Transcribe, và Comprehend, trình bày hệ sinh thái dịch vụ AI/ML toàn diện của AWS cho các ứng dụng thực tế<figcaption>
@@ -331,7 +331,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Generative AI với Amazon Bedrock - Nhóm Diễn giả Đa phương
 
-![Nhóm Diễn giả Đa phương - Generative AI với Amazon Bedrock](/images/Event-Participated/pic15.jpg)
+![Nhóm Diễn giả Đa phương - Generative AI với Amazon Bedrock](/images/Event-Participated/Event-3/pic15.jpg)
 
 <figure>
     <figcaption>Thảo luận nhóm diễn giả đa phương về Trí tuệ Nhân tạo Sinh tạo với Amazon Bedrock có đại diện Lam Tuan Kiet (Kỹ sư DevOps Cấp cao FPT Software), Dinh Le Hoang Anh (Trainee Cloud Engineer), và các diễn giả khác thảo luận về các triển khai thực tế và các thực hành tốt nhất<figcaption>
@@ -348,7 +348,7 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Ảnh Nhóm Hội thảo
 
-![Ảnh Nhóm Hội thảo - Sự kiện AWS Cloud Mastery](/images/Event-Participated/pic16.jpg)
+![Ảnh Nhóm Hội thảo - Sự kiện AWS Cloud Mastery](/images/Event-Participated/Event-3/pic16.jpg)
 
 <figure>
     <figcaption>Ảnh nhóm những người tham dự hội thảo và diễn giả trước màn hình hiển thị tương tác Kahoot, đại diện cho môi trường học tập hợp tác và hoàn thành thành công sự kiện AWS Cloud Mastery Series #1<figcaption>
@@ -360,19 +360,19 @@ Các kỹ thuật cơ bản để tương tác hiệu quả với mô hình:
 
 ##### Các Phiên Hội thảo & Học tập Tương tác
 
-![Phiên Hội thảo Kỹ thuật](/images/Event-Participated/pic10.jpg)
+![Phiên Hội thảo Kỹ thuật](/images/Event-Participated/Event-3/pic10.jpg)
 
 <figure>
     <figcaption>Bài thuyết trình hội thảo về các kỹ thuật AI/ML nâng cao và tích hợp dịch vụ AWS<figcaption>
 </figure>
 
-![Trình diễn Kỹ thuật Trực tiếp](/images/Event-Participated/pic11.jpg)
+![Trình diễn Kỹ thuật Trực tiếp](/images/Event-Participated/Event-3/pic11.jpg)
 
 <figure>
     <figcaption>Những người tham dự tập trung vào các bài thuyết trình kỹ thuật và học tập về các dịch vụ AI của AWS<figcaption>
 </figure>
 
-![Cộng đồng Hội thảo & Chia sẻ Kiến thức](/images/Event-Participated/pic12.jpg)
+![Cộng đồng Hội thảo & Chia sẻ Kiến thức](/images/Event-Participated/Event-3/pic12.jpg)
 
 <figure>
     <figcaption>Những người tham dự hội thảo tham gia thảo luận và trao đổi kiến thức trong sự kiện AWS Cloud Mastery<figcaption>
