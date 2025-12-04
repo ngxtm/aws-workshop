@@ -8,7 +8,7 @@ pre: " <b> 2. </b> "
 
 # MAPVIBE
 
-**Nền tảng Khám phá Vị trí Bản đồ Powered by AI**  
+**Nền tảng Khám phá Vị trí Bản đồ Powered by AI**
 _(Khám phá các địa điểm ăn uống và các địa điểm khác tại Thành phố Hồ Chí Minh sử dụng các gợi ý ngôn ngữ tự nhiên và thông tin chi tiết theo ngữ cảnh)_
 
 ---
