@@ -51,7 +51,7 @@ MapVibe sử dụng **AWS Bedrock (mô hình Titan embedding, mô hình LLM Clau
 ### Tổng quan
 
 Gợi ý Người dùng + Ngữ cảnh → **Mô hình Titan Embedding của Bedrock** → **Truy vấn có Cấu trúc** → **Tìm kiếm RDS (PostgreSQL)** → **Xếp hạng & Bộ nhớ đệm** → **Hiển thị Web UI** → **Vòng lặp Phản hồi Người dùng**.  
-![Solution Architecture](/images/2-Proposal/4N1D-Architechture.drawio.png)
+![Solution Architecture](/images/2-Proposal/Architechture.png)
 
 ### Dịch vụ AWS được sử dụng
 
