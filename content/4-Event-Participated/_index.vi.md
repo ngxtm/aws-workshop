@@ -1,17 +1,19 @@
 ---
-title : "Sự kiện đã tham gia"
-date :  2025-10-03
-weight : 4
-chapter : false
-pre : " <b> 4. </b> "
+title: "Sự kiện đã tham gia"
+date: 2025-10-03
+weight: 4
+chapter: false
+pre: " <b> 4. </b> "
 ---
 
 #### Tổng quan
+
 Phần này ghi lại các sự kiện AWS và điện toán đám mây mà tôi đã tham gia. Những trải nghiệm này đã mang đến những hiểu biết quý giá về các công nghệ mới nổi, các phương pháp hay nhất và ứng dụng thực tế của các giải pháp đám mây. Thông qua việc tham dự các sự kiện này, tôi đã mở rộng kiến thức kỹ thuật và kết nối với các chuyên gia trong ngành.
 
 ---
 
 ## [Sự kiện 1 - Vietnam Cloud Day 2025](./4.1-Event1/)
+
 **Vietnam Cloud Day 2025 - Ho Chi Minh City Connect Edition for Builders**
 
 Một sự kiện kỹ thuật chuyên sâu tập trung vào các dịch vụ AWS mới nhất và đổi mới về điện toán đám mây, đặc biệt là trong lĩnh vực Trí tuệ nhân tạo Sinh tạo. Sự kiện này đã tập hợp các nhà phát triển, kiến trúc sư đám mây để khám phá các giải pháp tiên tiến và kết nối với cộng đồng AWS.
@@ -24,6 +26,7 @@ Một sự kiện kỹ thuật chuyên sâu tập trung vào các dịch vụ AW
 ---
 
 ## [Sự kiện 2 - AWS GenAI Builder Club](./4.2-Event2/)
+
 **AWS GenAI Builder Club - AI-Driven Development Life Cycle: Tái tưởng tượng Kỹ thuật Phần mềm**
 
 Một buổi học kỹ thuật chuyên sâu khám phá Phát triển Hướng AI sử dụng Amazon Q Developer và Kiro. Sự kiện này đã trình diễn cách AI đang chuyển đổi toàn bộ chu trình phát triển phần mềm, từ thu thập yêu cầu đến triển khai, thông qua các demo thực tế và ví dụ thực hành.
@@ -36,6 +39,7 @@ Một buổi học kỹ thuật chuyên sâu khám phá Phát triển Hướng A
 ---
 
 ## [Sự kiện 3 - AWS Cloud Mastery Series #1](./4.3-Event3/)
+
 **AI/ML/GenAI on AWS - Amazon Bedrock AgentCore & Xây dựng Tác nhân Thông minh**
 
 Một hội thảo kỹ thuật toàn diện về xây dựng các tác nhân thông minh và ứng dụng trí tuệ nhân tạo sinh tạo bằng Amazon Bedrock. Sự kiện này có nhiều diễn giả chuyên gia cung cấp các buổi học sâu về kỹ thuật prompt, kiến trúc RAG, dịch vụ AI, và các giải pháp thực tế cho các thách thức triển khai chatbot AI thực tế.
@@ -48,6 +52,7 @@ Một hội thảo kỹ thuật toàn diện về xây dựng các tác nhân th
 ---
 
 ## [Sự kiện 4 - AWS Cloud Mastery Series #2](./4.4-Event4/)
+
 **DevOps on AWS - CI/CD Pipelines, Infrastructure as Code, Containers, and Observability**
 
 Một hội thảo kỹ thuật toàn diện cả ngày bao gồm toàn bộ vòng đời DevOps trên AWS. Sự kiện này cung cấp kiến thức thực tế về tự động hóa triển khai bằng CodePipeline, quản lý cơ sở hạ tầng thông qua mã bằng CloudFormation và CDK, đóng gói ứng dụng bằng Docker và dịch vụ AWS, và triển khai giám sát toàn diện bằng CloudWatch và X-Ray.
@@ -61,6 +66,7 @@ Một hội thảo kỹ thuật toàn diện cả ngày bao gồm toàn bộ vò
 ---
 
 ## [Sự kiện 5 - AWS Cloud Mastery Series #3](./4.5-Event5/)
+
 **AWS Well-Architected Security Pillar - IAM, Detection, Infrastructure Protection, Data Protection, Incident Response**
 
 Một hội thảo nửa ngày tập trung vào Security Pillar của AWS Well-Architected Framework. Buổi học bao gồm năm trụ cột chính với demo thực hành: IAM best practices, detection với CloudTrail và GuardDuty, infrastructure protection với VPC và WAF, data protection với KMS, và automated incident response.
@@ -73,3 +79,15 @@ Một hội thảo nửa ngày tập trung vào Security Pillar của AWS Well-A
 
 ---
 
+## [Sự kiện 6 - Building Agentic AI - Tối ưu hóa Context với Amazon Bedrock](./4.6-Event6/)
+
+**Building Agentic AI - Context Optimization with Amazon Bedrock**
+
+Workshop thực hành này tập trung vào việc xây dựng AI agents tự động sử dụng Amazon Bedrock. Sự kiện quy tụ các chuyên gia từ AWS, Azure và cộng đồng Kubernetes để chia sẻ kiến thức về phát triển agentic AI, kỹ thuật tối ưu hóa context và chiến lược triển khai thực tế. Người tham dự có cơ hội tìm hiểu về AWS Bedrock Agent Core, khám phá các use cases thực tế và tham gia workshop thực hành xây dựng agentic workflows.
+
+- **Ngày:** 05 tháng 12, 2025
+- **Địa điểm:** Tầng 26, Tòa nhà Bitexco Financial Tower
+- **Trọng tâm:** AI Agents Tự động, Tối ưu hóa Context, Amazon Bedrock, Agentic Workflows
+- **Những điểm chính:** Kiến trúc Agent Core, Tối ưu hóa Context Window, Pattern Điều phối Agentic, Use Cases AI Thực tế
+
+---

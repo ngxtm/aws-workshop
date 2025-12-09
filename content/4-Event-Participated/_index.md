@@ -1,17 +1,19 @@
 ---
-title : "Events Participated"
-date :  2025-10-03
-weight : 4
-chapter : false
-pre : " <b> 4. </b> "
+title: "Events Participated"
+date: 2025-10-03
+weight: 4
+chapter: false
+pre: " <b> 4. </b> "
 ---
 
 #### Overview
+
 This section documents my participation in AWS and cloud computing events. These experiences have provided valuable insights into emerging technologies, best practices, and real-world applications of cloud solutions. Through attending these events, I've expanded my technical knowledge and connected with industry professionals.
 
 ---
 
 ## [Event 1 - Vietnam Cloud Day 2025](./4.1-Event1/)
+
 **Vietnam Cloud Day 2025 - Ho Chi Minh City Connect Edition for Builders**
 
 An immersive technical event focused on the latest AWS services and cloud innovations, particularly in Generative AI. This event brought together cloud builders, developers, and architects to explore cutting-edge solutions and network with the AWS community.
@@ -24,6 +26,7 @@ An immersive technical event focused on the latest AWS services and cloud innova
 ---
 
 ## [Event 2 - AWS GenAI Builder Club](./4.2-Event2/)
+
 **AWS GenAI Builder Club - AI-Driven Development Life Cycle: Reimagining Software Engineering**
 
 An intensive technical session exploring AI-Driven Development using Amazon Q Developer and Kiro. This event demonstrated how AI is transforming the entire software development lifecycle, from requirements gathering to deployment, through practical demonstrations and hands-on examples.
@@ -36,6 +39,7 @@ An intensive technical session exploring AI-Driven Development using Amazon Q De
 ---
 
 ## [Event 3 - AWS Cloud Mastery Series #1](./4.3-Event3/)
+
 **AI/ML/GenAI on AWS - Amazon Bedrock AgentCore & Intelligent Agent Building**
 
 A comprehensive technical workshop on building intelligent agents and generative AI applications using Amazon Bedrock. This event featured multiple expert speakers delivering in-depth sessions on prompt engineering, RAG architecture, AI services, and practical solutions for real-world AI chatbot deployment challenges.
@@ -48,6 +52,7 @@ A comprehensive technical workshop on building intelligent agents and generative
 ---
 
 ## [Event 4 - AWS Cloud Mastery Series #2](./4.4-Event4/)
+
 **DevOps on AWS - CI/CD Pipelines, Infrastructure as Code, Containers, and Observability**
 
 A comprehensive all-day workshop covering the complete DevOps lifecycle on AWS. This event delivered practical knowledge on automating deployments with CodePipeline, managing infrastructure through code with CloudFormation and CDK, containerizing applications with Docker and AWS services, and implementing comprehensive monitoring with CloudWatch and X-Ray.
@@ -61,6 +66,7 @@ A comprehensive all-day workshop covering the complete DevOps lifecycle on AWS. 
 ---
 
 ## [Event 5 - AWS Cloud Mastery Series #3](./4.5-Event5/)
+
 **AWS Well-Architected Security Pillar - IAM, Detection, Infrastructure Protection, Data Protection, Incident Response**
 
 A half-day workshop focused on the Security Pillar of the AWS Well-Architected Framework. The session covered five core pillars with practical demonstrations: IAM best practices, detection with CloudTrail and GuardDuty, infrastructure protection with VPC and WAF, data protection with KMS, and automated incident response.
@@ -70,3 +76,16 @@ A half-day workshop focused on the Security Pillar of the AWS Well-Architected F
 - **Location:** AWS Vietnam Office
 - **Focus:** IAM Identity Center, Access Analyzer, GuardDuty, Security Hub, KMS, Secrets Manager, Incident Response Playbooks
 - **Key Takeaways:** Eliminate long-term credentials, Detection-as-Code, automated incident response with Step Functions, defense in depth strategy, Security Pillar review methodology
+
+---
+
+## [Event 6 - Building Agentic AI - Context Optimization with Amazon Bedrock](./4.6-Event6/)
+
+**Building Agentic AI - Context Optimization with Amazon Bedrock**
+
+This hands-on workshop focused on building autonomous AI agents using Amazon Bedrock. The event brought together experts from AWS, Azure, and the Kubernetes community to share insights on agentic AI development, context optimization techniques, and real-world implementation strategies. Attendees had the opportunity to learn about AWS Bedrock Agent Core, explore practical use cases, and participate in a hands-on workshop building agentic workflows.
+
+- **Date:** December 5, 2025
+- **Location:** 26th Floor, Bitexco Financial Tower
+- **Focus:** Autonomous AI Agents, Context Optimization, Amazon Bedrock, Agentic Workflows
+- **Key Takeaways:** Agent Core Architecture, Context Window Optimization, Agentic Orchestration Patterns, Real-World AI Use Cases
