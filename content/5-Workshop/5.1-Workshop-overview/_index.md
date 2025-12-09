@@ -12,6 +12,7 @@ pre : " <b> 5.1. </b> "
 **MapVibe** is an AI-powered location discovery platform that helps users find dining and activity locations in Ho Chi Minh City using natural language queries. Instead of traditional keyword searches, users can express their needs in conversational language, such as "I'm feeling sad today, is there any drink place that can help me relieve my sadness?"
 
 The platform leverages AWS AI services including:
+
 - **AWS Bedrock** - For natural language processing using Titan embedding model and Claude LLM
 - **Amazon Rekognition** - For content moderation of user-uploaded images
 - **Amazon Textract** - For extracting text from menu images and signs
