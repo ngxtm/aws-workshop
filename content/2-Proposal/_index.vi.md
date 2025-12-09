@@ -1,21 +1,25 @@
 ---
 title: "Proposal"
-date: 2025-10-03
+date: 2025-10-22
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# MAPVIBE
-
-**Nền tảng Khám phá Vị trí Bản đồ Powered by AI**
-_(Khám phá các địa điểm ăn uống và các địa điểm khác tại Thành phố Hồ Chí Minh sử dụng các gợi ý ngôn ngữ tự nhiên và thông tin chi tiết theo ngữ cảnh)_
+# MAPVIBE - Nền tảng Khám phá địa điểm ăn uống với AI
+*(Khám phá các địa điểm ăn uống và các địa điểm khác tại Thành phố Hồ Chí Minh sử dụng các gợi ý ngôn ngữ tự nhiên và thông tin chi tiết theo ngữ cảnh)*
 
 ---
 
-## 1. Tóm tắt Điều hành
+## 1. Tóm tắt chung
 
-MapVibe là một nền tảng web driven by AI được ra mắt tại **Thành phố Hồ Chí Minh** để biến đổi việc khám phá địa điểm, cho phép người dùng tìm kiếm địa điểm thông qua các gợi ý ngôn ngữ tự nhiên (ví dụ: "tìm nhà hàng sang trọng trên tầng thượng có view thành phố mở cửa đến nửa đêm" hoặc "quán cà phê yên tĩnh gần sông có chỗ ngồi ngoài trời"). Nền tảng sử dụng **Mô hình Ngôn ngữ Lớn (LLMs) của Amazon Bedrock** để diễn giải ý định của người dùng, tích hợp các yếu tố ngữ cảnh theo thời gian thực như vị trí, thời gian và sở thích, và truy xuất dữ liệu từ cơ sở dữ liệu nội bộ **DynamoDB**. Xây dựng trên **kiến trúc AWS serverless**, MapVibe cung cấp **độ trễ thấp (<10s)**, **độ chính xác cao (≥85% sự hài lòng tương ứng)**, và **hiệu quả chi phí (<$200 cho chu kỳ phát triển và demo 8 tuần ban đầu, hoàn thành vào ngày 22 tháng 10 năm 2025)**. Người dùng đã xác thực tận hưởng các đề xuất được cá nhân hóa, khả năng đóng góp đánh giá, và truy cập các công cụ kiểm duyệt, tất cả được nâng cao bởi công nghệ AI.
+Chúng tôi là một nhóm gồm 5 sinh viên Công nghệ Thông tin đang thực tập, cùng nhau phát triển một dự án mang tên MapVibe. MapVibe là một nền tảng website sáng tạo, giúp người dùng, đặc biệt là thế hệ **GenZ**, tìm kiếm các địa điểm ăn uống bằng ngôn ngữ tự nhiên, dựa trên **tâm trạng và cảm xúc thật** của họ. Ví dụ, thay vì tìm "quán cà phê", người dùng có thể hỏi "Hôm nay tôi đang buồn, có quán đồ uống nào giúp tôi giải tỏa nỗi buồn không?".
+
+Mục tiêu của dự án là cải tiến phương pháp tìm kiếm truyền thống và tạo ra một trải nghiệm cá nhân hóa, sâu sắc hơn cho người dùng. Chúng tôi lựa chọn AWS làm nền tảng đám mây để tận dụng các dịch vụ mạnh mẽ, linh hoạt và tối ưu chi phí. Điều này giúp đội ngũ tập trung tối đa nguồn lực vào phát triển tính năng cốt lõi, giảm thiểu gánh nặng quản lý hạ tầng, đồng thời giữ cho chi phí vận hành nằm trong **ngân sách 200 đô la từ gói AWS Free Tier**, rất phù hợp với một dự án sinh viên.
+
+Tính năng cốt lõi của MapVibe cho phép người dùng truy vấn bằng ngôn ngữ tự nhiên để tìm kiếm địa điểm phù hợp với tâm trạng hoặc nhu cầu cụ thể của họ. Hệ thống sẽ phân tích và trả về những gợi ý phù hợp nhất, kèm theo các bài đánh giá và thông tin chi tiết.
+
+Để đạt được mục tiêu này, nhóm chúng tôi sẽ chịu trách nhiệm toàn bộ quá trình: từ thiết kế, phát triển website, xây dựng và cấu hình hạ tầng trên AWS (sử dụng các dịch vụ như **Bedrock**, **Lambda**, **RDS**), cho đến việc tự tổng hợp bộ dữ liệu ban đầu về các địa điểm.
 
 ---
 
@@ -29,7 +33,7 @@ MapVibe là một nền tảng web driven by AI được ra mắt tại **Thành
 
 ### Giải pháp
 
-MapVibe sử dụng **AWS Bedrock LLMs** để phân tích các gợi ý ngôn ngữ tự nhiên bằng tiếng Việt và tiếng Anh, chuyển đổi chúng thành các truy vấn có cấu trúc. Nó truy xuất và xếp hạng kết quả từ cơ sở dữ liệu nội bộ **DynamoDB** với dữ liệu địa điểm được lập chỉ mục địa lý, cung cấp giao diện kết hợp (tìm kiếm trò chuyện + bộ lọc danh mục). Nội dung do người dùng tạo (đánh giá, gợi ý địa điểm) được kiểm duyệt sử dụng **AWS Rekognition**, đảm bảo an toàn và chất lượng thông qua phân tích driven by AI tiên tiến.
+MapVibe sử dụng **AWS Bedrock (mô hình Titan embedding, mô hình LLM Claude)** để phân tích các gợi ý ngôn ngữ tự nhiên bằng tiếng Việt và tiếng Anh, chuyển đổi chúng thành các truy vấn có cấu trúc. Nó truy xuất và xếp hạng kết quả từ cơ sở dữ liệu nội bộ **RDS (PostgreSQL)** với dữ liệu địa điểm được lập chỉ mục địa lý và các tính năng hỗ trợ vector, cung cấp giao diện kết hợp (tìm kiếm trò chuyện + bộ lọc danh mục). Nội dung do người dùng tạo (đánh giá, gợi ý địa điểm) được kiểm duyệt sử dụng **AWS Rekognition**, đảm bảo an toàn và chất lượng thông qua phân tích driven by AI tiên tiến.
 
 ### Lợi ích và ROI
 
@@ -37,7 +41,7 @@ MapVibe sử dụng **AWS Bedrock LLMs** để phân tích các gợi ý ngôn n
 - **Cá nhân hóa**: Kết quả nhận biết ngữ cảnh dựa trên sở thích và hành vi của người dùng, powered by AI.
 - **Tự động hóa**: Loại bỏ bộ lọc thủ công với phân tích ý định driven by AI.
 - **Khả năng mở rộng**: Cơ sở hạ tầng AWS toàn cầu đảm bảo độ trễ thấp và khả năng phục hồi.
-- **Hiệu quả chi phí**: Tối ưu hóa để phù hợp với ngân sách $200 cho chu kỳ 8 tuần ban đầu, hoàn thành vào ngày 22 tháng 10 năm 2025.
+- **Hiệu quả chi phí**: Tối ưu hóa để phù hợp với ngân sách $200 tín dụng từ AWS Free Tier cho toàn bộ chu kỳ phát triển và triển khai ban đầu.
 - **Tiềm năng thương mại**: Cơ hội hợp tác với các doanh nghiệp địa phương hoặc tích hợp với các hệ thống đặt phòng nội bộ.
 
 ---
@@ -46,33 +50,34 @@ MapVibe sử dụng **AWS Bedrock LLMs** để phân tích các gợi ý ngôn n
 
 ### Tổng quan
 
-Gợi ý Người dùng + Ngữ cảnh → **Phân tích Ý định Bedrock LLM** → **Truy vấn có Cấu trúc** → **Tìm kiếm DynamoDB** → **Xếp hạng & Bộ nhớ đệm** → **Hiển thị Web UI** → **Vòng lặp Phản hồi Người dùng**.  
-![Solution Architecture](https://4n1d.github.io/aws-workshop/images/architecture.png)
+Gợi ý Người dùng + Ngữ cảnh → **Mô hình Titan Embedding của Bedrock** → **Truy vấn có Cấu trúc** → **Tìm kiếm RDS (PostgreSQL)** → **Xếp hạng & Bộ nhớ đệm** → **Hiển thị Web UI** → **Vòng lặp Phản hồi Người dùng**.  
+![Solution Architecture](/images/2-Proposal/4N1D-Architechture.drawio.png)
 
 ### Dịch vụ AWS được sử dụng
 
-| Service                 | Function                                                        |
-| ----------------------- | --------------------------------------------------------------- |
-| Amazon Route 53         | Định tuyến tên miền                                             |
-| AWS Certificate Manager | Chứng chỉ SSL/TLS                                               |
-| AWS WAF                 | Tường lửa ứng dụng web                                          |
-| Amazon CloudFront       | CDN toàn cầu cho tài sản tĩnh                                   |
-| Amazon API Gateway      | Điểm cuối API RESTful an toàn                                   |
-| AWS Lambda              | Logic phân tích ý định, tìm kiếm và xếp hạng                    |
-| Amazon DynamoDB         | Dữ liệu địa điểm được lập chỉ mục địa lý và bộ nhớ đệm truy vấn |
-| Amazon S3               | Lưu trữ ảnh, nhật ký và tài sản                                 |
-| Amazon Cognito          | Xác thực và ủy quyền người dùng                                 |
-| Amazon Bedrock          | LLM để phân tích ý định và tóm tắt                              |
-| Amazon Rekognition      | Kiểm duyệt nội dung driven by AI cho các tải lên của người dùng |
-| Amazon EventBridge      | Phân tích theo lịch và cập nhật huy hiệu                        |
-| Amazon CloudWatch       | Giám sát và ghi nhật ký                                         |
+| Service                   | Function                              |
+|---------------------------|---------------------------------------|
+| Amazon Route 53           | Định tuyến tên miền                   |
+| AWS Certificate Manager   | Chứng chỉ SSL/TLS                     |
+| AWS WAF                   | Tường lửa ứng dụng web                |
+| Amazon CloudFront         | CDN toàn cầu cho tài sản tĩnh         |
+| Amazon API Gateway        | Điểm cuối API RESTful an toàn         |
+| AWS Lambda                | Logic phân tích ý định, tìm kiếm và xếp hạng |
+| Amazon RDS (PostgreSQL)   | Dữ liệu địa điểm được lập chỉ mục địa lý và bộ nhớ đệm truy vấn |
+| Amazon S3                 | Lưu trữ ảnh, nhật ký và tài sản       |
+| Amazon Cognito            | Xác thực và ủy quyền người dùng       |
+| Amazon Bedrock            | Mô hình Titan embedding và mô hình LLM Claude để phân tích ý định và tóm tắt    |
+| Amazon Rekognition        | Kiểm duyệt nội dung driven by AI cho các tải lên của người dùng |
+| Amazon Textract           | Trích xuất văn bản từ hình ảnh và tài liệu (menu, biển hiệu, v.v.) |
+| Amazon EventBridge        | Phân tích theo lịch và cập nhật huy hiệu |
+| Amazon CloudWatch         | Giám sát và ghi nhật ký               |
 
 ### Thiết kế Thành phần
 
 - **Frontend**: Ứng dụng web responsive (Next.js, song ngữ VI/EN, UI tìm kiếm kết hợp).
 - **Tiếp nhận Dữ liệu**: Gợi ý và ngữ cảnh được xử lý qua API Gateway; các tải lên của người dùng (đánh giá, ảnh) được kiểm duyệt bởi AI của Rekognition.
-- **Lưu trữ Dữ liệu**: DynamoDB cho dữ liệu địa điểm và truy vấn được bộ nhớ đệm (TTL 24 giờ); S3 cho ảnh và nhật ký.
-- **Xử lý Dữ liệu**: Microservices Lambda xử lý các cuộc gọi Bedrock LLM, thực thi truy vấn và xếp hạng kết quả.
+- **Lưu trữ Dữ liệu**: RDS (PostgreSQL) cho dữ liệu địa điểm với thiết kế cơ sở dữ liệu quan hệ (ERD), các tính năng hỗ trợ vector và lập chỉ mục để tối ưu hóa tốc độ truy vấn; S3 cho ảnh và nhật ký.
+- **Xử lý Dữ liệu**: Microservices Lambda xử lý các cuộc gọi Bedrock (mô hình Titan embedding và mô hình LLM Claude), thực thi truy vấn và xếp hạng kết quả.
 - **Quản lý Người dùng**: Cognito cho xác thực dựa trên JWT (đăng nhập email/mạng xã hội); người dùng khách truy cập các tính năng hạn chế.
 - **Đầu ra**: Hiển thị thẻ địa điểm với tóm tắt được tạo bởi AI, đánh giá, ảnh và CTA (ví dụ: Chỉ đường, Gọi).
 
@@ -82,126 +87,122 @@ Gợi ý Người dùng + Ngữ cảnh → **Phân tích Ý định Bedrock LLM*
 
 ### Các giai đoạn Triển khai
 
-| Phase | Description                                                 | Duration                                           |
-| ----- | ----------------------------------------------------------- | -------------------------------------------------- |
-| 1     | Xác định kiến trúc, schema gợi ý Bedrock và schema DynamoDB | Đã hoàn thành (2 tuần)                             |
-| 2     | Ước tính chi phí và tối ưu hóa chiến lược bộ nhớ đệm        | Đã hoàn thành (1 tuần)                             |
-| 3     | Xây dựng backend (Lambda, DynamoDB, Bedrock, Rekognition)   | Đã hoàn thành (3 tuần)                             |
-| 4     | Phát triển frontend (Next.js, song ngữ, UI responsive)      | Đã hoàn thành (3 tuần)                             |
-| 5     | Kiểm tra và tối ưu hóa cho độ trễ <10s và khả năng mở rộng  | Đã hoàn thành (2 tuần)                             |
-| 6     | Ra mắt MVP, triển khai qua CI/CD, thu thập phản hồi         | Đang tiến hành (bắt đầu ngày 22 tháng 10 năm 2025) |
+| Phase | Description                                          | Duration   |
+|-------|------------------------------------------------------|------------|
+| 1     | Xác định kiến trúc, schema Titan embedding của Bedrock và schema RDS (PostgreSQL) với thiết kế ERD | 2 tuần |
+| 2     | Ước tính chi phí và tối ưu hóa chiến lược bộ nhớ đệm  | 1 tuần |
+| 3     | Xây dựng backend (Lambda, RDS PostgreSQL, Bedrock Titan embedding, Rekognition)| 3 tuần |
+| 4     | Phát triển frontend (Next.js, song ngữ, UI responsive)  | 3 tuần |
+| 5     | Kiểm tra và tối ưu hóa cho độ trễ <10s và khả năng mở rộng | 2 tuần |
+| 6     | Ra mắt MVP, triển khai qua CI/CD (Terraform, GitLab), thu thập phản hồi    | 2 tuần |
 
 ### Yêu cầu Kỹ thuật
 
 - **Thiết bị Edge**: Trình duyệt hiện đại (Chrome, Safari, Firefox) với UI responsive sẵn sàng PWA.
-- **Cloud**: AWS Route 53, ACM, WAF, CloudFront, API Gateway, Lambda, DynamoDB, S3, Cognito, Bedrock, Rekognition, EventBridge, CloudWatch.
-- **Công cụ & Framework**: Next.js (App Router), TypeScript, AWS CDK cho infrastructure-as-code, GitHub Actions cho CI/CD.
+- **Cloud**: AWS Route 53, ACM, WAF, CloudFront, API Gateway, Lambda, RDS (PostgreSQL với hỗ trợ vector), S3, Cognito, Bedrock (Titan embedding, Claude LLM), Rekognition, Textract, EventBridge, CloudWatch.
+- **Công cụ & Framework**: Next.js (App Router), TypeScript, Terraform cho infrastructure-as-code, GitLab cho CI/CD.
 
 ---
 
 ## 5. Lịch trình & Cột mốc
 
-| Period                                    | Activities                                                                    |
-| ----------------------------------------- | ----------------------------------------------------------------------------- |
-| Trước khi Phát triển (Tháng 0)            | Nghiên cứu các bộ dữ liệu địa điểm tại Thành phố Hồ Chí Minh cho DynamoDB     |
-| Tháng 1 (Tháng 9 năm 2025)                | Xây dựng backend MVP với Bedrock LLM và DynamoDB                              |
-| Tháng 2 (Tháng 10 năm 2025)               | Triển khai bộ nhớ đệm, phát triển tích hợp frontend                           |
-| Tháng 3 (Tháng 10 năm 2025)               | Ra mắt beta công khai, tối ưu hóa hiệu suất, thu thập phản hồi                |
-| Sau khi Ra mắt (Tháng 10 năm 2025 trở đi) | Thêm các tính năng nâng cao (ví dụ: xếp hạng dựa trên ML, chế độ ngoại tuyến) |
+| Period              | Activities                                                  |
+|---------------------|-------------------------------------------------------------|
+| Trước khi Phát triển (Tháng 0 - 9/2025) | Nghiên cứu các bộ dữ liệu địa điểm tại Thành phố Hồ Chí Minh cho RDS (PostgreSQL) |
+| Tháng 1 (10/2025) | Xây dựng backend MVP với mô hình Titan embedding của Bedrock và RDS (PostgreSQL)            |
+| Tháng 2 (11/2025)  | Triển khai bộ nhớ đệm, phát triển tích hợp frontend            |
+| Tháng 3 (11/2025)  | Ra mắt beta công khai, tối ưu hóa hiệu suất, thu thập phản hồi  |
+| Sau khi Ra mắt (12/2025) | Thêm các tính năng nâng cao (ví dụ: xếp hạng dựa trên ML, chế độ ngoại tuyến)|
 
 ---
 
 ## 6. Ước tính Ngân sách
 
-### Chi phí Cơ sở hạ tầng Đám mây
+### Ước tính Thời gian Đầu tư theo Giai đoạn
 
-| AWS Service          | Cost/Month (USD) | Description            |
-| -------------------- | ---------------- | ---------------------- |
-| Lambda               | 15               | API + LLM logic        |
-| DynamoDB             | 10               | Cached query store     |
-| S3                   | 5                | Logs, static files     |
-| API Gateway          | 10               | Request routing        |
-| Cognito              | 5                | Auth MAU               |
-| CloudFront           | 10               | Hosting/CDN            |
-| Bedrock (LLM tokens) | 15               | Prompt parsing         |
-| Rekognition          | 5                | Batch image moderation |
-| CloudWatch           | 5                | Error-only logging     |
-| **Total**            | **≈ 80/tháng**   | **≈ 160/8 tuần**       |
+Chúng tôi ước tính mỗi thành viên sẽ đóng góp khoảng 20 giờ mỗi tuần cho dự án. Với mỗi giai đoạn kéo dài 2 tuần, tổng thời gian đầu tư được ước tính như sau:
+
+| Giai đoạn dự án | Tổng số giờ ước tính |
+|:--:|:--:|
+| Giai đoạn 1: Thiết lập nền tảng | 200 giờ (5 người * 20 giờ/tuần * 2 tuần) |
+| Giai đoạn 2: Xây dựng tính năng lõi | 200 giờ (5 người * 20 giờ/tuần * 2 tuần) |
+| Giai đoạn 3: Hoàn thiện và Triển khai | 200 giờ (5 người * 20 giờ/tuần * 2 tuần) |
+| **Tổng số giờ** | **600 giờ** |
+| **Tổng chi phí tài chính** | **$0** |
+
+### Phân bố Đóng góp cho Dự án
+
+Chi phí tài chính trực tiếp của dự án là không đáng kể và được trang trải hoàn toàn bởi các khoản tín dụng. Sự đóng góp chính đến từ thời gian của đội ngũ và sự hỗ trợ từ AWS.
+
+| Bên tham gia | Đóng góp | % Đóng góp (Tổng giá trị) |
+|:--|:--|:--|
+| Khách hàng (Chương trình thực tập) | - Cơ hội học tập và kinh nghiệm thực tế. | - |
+| Đối tác (Nhóm sinh viên) | - Thời gian và công sức (ước tính 600 giờ). | - |
+| AWS | - $200 tín dụng (credit). <br> - Các dịch vụ trong Gói Miễn phí (Free Tier). | 100% (chi phí tài chính) |
 
 ### Biện pháp Tối ưu hóa Chi phí
+- **Sử dụng Free-Tier**: Tận dụng các miễn phí của AWS cho Lambda, RDS, S3, CloudFront, Rekognition và Cognito để giảm thiểu chi phí.
+- **Bộ nhớ đệm Aggressive cho Bedrock**: Đạt tỷ lệ truy cập bộ nhớ đệm cao để giảm chi phí token AI.
+- **Xử lý Batch Rekognition**: Các kiểm tra hình ảnh không theo thời gian thực để tiết kiệm chi phí.
+- **Sử dụng RDS Tối ưu**: Sử dụng PostgreSQL với lập chỉ mục phù hợp để giảm thiểu chi phí truy vấn.
+- **Bộ nhớ đệm Tài sản Tĩnh**: Tối thiểu hóa chi phí truyền dữ liệu đi ra thông qua CloudFront.
 
-- **Sử dụng Free-Tier**: Tận dụng các miễn phí của AWS cho Lambda, DynamoDB, S3, CloudFront, Rekognition và Cognito để giảm thiểu chi phí.
-- **Bộ nhớ đệm Aggressive cho Bedrock**: Đạt tỷ lệ truy cập bộ nhớ đệm 95% để giảm chi phí token AI từ $120 xuống <$15/tháng.
-- **Xử lý Batch Rekognition**: Các kiểm tra hình ảnh không theo thời gian thực tiết kiệm ~$80 trong 8 tuần.
-- **Kiểm tra Tải được Đơn giản hóa**: Kịch bản 100 người dùng × 10 phút thay vì 300 × 30 phút giảm chi phí tính toán.
-- **Giảm ghi nhật ký CloudWatch**: Chỉ ghi nhật ký lỗi tiết kiệm $50+ trong 8 tuần.
-- **Không có Đồng thời được Cung cấp**: Tránh chi phí Lambda nhàn rỗi.
-- **Biến môi trường**: Sử dụng thay vì Secrets Manager để loại bỏ phí lưu trữ bí mật.
-- **Chế độ On-Demand DynamoDB**: Tất cả đọc/ghi miễn phí theo cấp.
-- **Vô hiệu hóa Origin Shield**: Tiết kiệm chi phí CloudFront.
-- **Bộ nhớ đệm Tài sản Tĩnh**: Tối thiểu hóa chi phí truyền dữ liệu đi ra.
-
-### Kịch bản Ngân sách Đề xuất
-
-Để đảm bảo nền tảng MapVibe hoạt động hiệu quả trong ngân sách AWS $200 trong chu kỳ phát triển và demo 8 tuần ban đầu (hoàn thành vào ngày 22 tháng 10 năm 2025), chúng tôi đề xuất các kịch bản sau dựa trên các mức độ tối ưu hóa và sử dụng tài nguyên khác nhau:
-
-- **Kịch bản Tối thiểu**: Tập trung vào các tính năng thiết yếu với sự phụ thuộc tối đa vào các miễn phí. Điều này bao gồm vô hiệu hóa các dịch vụ không quan trọng như WAF nếu không cần thiết, giới hạn các cuộc gọi Bedrock chỉ cho các truy vấn được bộ nhớ đệm (nhắm đến tỷ lệ truy cập bộ nhớ đệm 98%+), và không thực hiện kiểm tra tải. Chi phí ước tính: <$50 trong 8 tuần. Phù hợp cho prototyping ban đầu nhưng có thể ảnh hưởng đến độ tin cậy của demo do các vấn đề về khả năng mở rộng chưa được kiểm tra.
-
-- **Kịch bản Đề xuất**: Cân bằng chi phí và độ tin cậy bằng cách kết hợp tất cả các biện pháp tối ưu hóa chính được liệt kê ở trên. Kịch bản này sử dụng bộ nhớ đệm aggressive (tỷ lệ truy cập 95% cho Bedrock), xử lý batch cho Rekognition, kiểm tra tải đơn giản hóa (100 người dùng × 10 phút), và chỉ ghi nhật ký lỗi trong CloudWatch. Nó đảm bảo độ trễ thấp và khả năng phục hồi trong khi vẫn nằm dưới ngân sách. Chi phí ước tính: ~$100-150 trong 8 tuần. Lý tưởng cho demo MVP ra mắt vào ngày 22 tháng 10 năm 2025, cung cấp trải nghiệm mạnh mẽ mà không có chi phí không cần thiết.
-
-- **Kịch bản Nâng cao**: Bao gồm các điều khoản bổ sung cho việc sử dụng cao hơn sau khi ra mắt, chẳng hạn như đồng thời được cung cấp cho Lambda trong giờ cao điểm và ghi nhật ký đầy đủ trong CloudWatch để gỡ lỗi chi tiết. Điều này làm tăng chi phí một chút nhưng nâng cao giám sát hiệu suất và kiểm tra khả năng mở rộng (ví dụ: tải 300 người dùng × 30 phút). Chi phí ước tính: ~$180-200 trong 8 tuần. Được đề xuất cho các hoạt động liên tục sau ngày 22 tháng 10 năm 2025, nếu dự kiến có các demo mở rộng hoặc lưu lượng truy cập cao hơn, vẫn nằm trong giới hạn ngân sách tổng thể.
-
-Đề xuất: Kịch bản Đề xuất đã được triển khai thành công cho việc ra mắt MVP vào ngày 22 tháng 10 năm 2025, đảm bảo độ tin cậy demo tối ưu, khả năng mở rộng và kiểm soát chi phí trong ngân sách $200. Đối với các hoạt động liên tục, hãy xem xét chuyển sang Kịch bản Nâng cao khi cần thiết.
-
-### Kiểm soát & Giám sát Chi phí
-
-- Tạo cảnh báo thanh toán và bật AWS Cost Explorer.
-- Gắn thẻ tất cả tài nguyên (Project=MapVibe, Environment=Dev).
-- Xem xét hàng tuần:
-  - Dữ liệu CloudFront > 50 GB/tuần
-  - Tỷ lệ truy cập bộ nhớ đệm Bedrock < 90%
-  - Các cuộc gọi Lambda > 100K/tuần
-  - Tổng chi phí > $15/tuần
+### Kiểm soát Ngân sách
+- Toàn bộ dự án hoạt động trong phạm vi **$200 tín dụng từ AWS Free Tier**.
+- Tất cả chi phí cơ sở hạ tầng được trang trải bởi tín dụng AWS và các dịch vụ free tier.
+- Không có chi phí tài chính trực tiếp nào được phát sinh bởi nhóm.
 
 ---
 
 ## 7. Đánh giá Rủi ro
 
-| Risk                                            | Impact | Probability | Mitigation                                             |
-| ----------------------------------------------- | ------ | ----------- | ------------------------------------------------------ |
-| Dữ liệu DynamoDB không nhất quán                | High   | Medium      | Xác thực và sao lưu dữ liệu thường xuyên               |
-| Phân tích LLM không chính xác (VN/EN)           | Medium | Low         | Mẫu gợi ý được xác định trước, xác thực                |
-| Khả năng mở rộng dưới tải cao                   | Medium | Medium      | Tự động mở rộng serverless, bộ nhớ đệm                 |
-| Mối quan tâm về quyền riêng tư (dữ liệu vị trí) | High   | Low         | Sự đồng ý rõ ràng của người dùng, các truy vấn ẩn danh |
+| Risk                            | Impact | Probability | Mitigation                              |
+|---------------------------------|--------|-------------|----------------------------------------|
+| Dữ liệu RDS không nhất quán      | High   | Medium      | Xác thực và sao lưu dữ liệu thường xuyên    |
+| Phân tích Titan embedding không chính xác (VN/EN)  | Medium | Low         | Mẫu gợi ý được xác định trước, xác thực |
+| Khả năng mở rộng dưới tải cao     | Medium | Medium      | Tự động mở rộng serverless, bộ nhớ đệm       |
+| Mối quan tâm về quyền riêng tư (dữ liệu vị trí)| High   | Low         | Sự đồng ý rõ ràng của người dùng, các truy vấn ẩn danh |
+| Vượt quá ngân sách               | High   | Medium      | Giám sát chặt chẽ, sử dụng free tiers, cảnh báo chi phí |
+| Phụ thuộc vào dịch vụ AWS Bedrock (Titan, Claude)  | High   | Low         | Cơ chế dự phòng thay thế, kết quả được bộ nhớ đệm |
+| Phụ thuộc vào nền tảng GitLab    | Medium | Low         | Sao lưu thường xuyên, tùy chọn repository thay thế |
+| Chất lượng dữ liệu ban đầu       | Medium | Medium      | Quy trình xác thực dữ liệu, tích hợp phản hồi người dùng |
 
-**Kế hoạch dự phòng**: Sử dụng kết quả DynamoDB được bộ nhớ đệm hoặc dự phòng JSON cục bộ cho các demo. Triển khai giới hạn tốc độ dựa trên IP cho người dùng chưa xác thực.
+**Kế hoạch dự phòng**: Sử dụng kết quả RDS được bộ nhớ đệm hoặc dự phòng JSON cục bộ cho các demo. Triển khai giới hạn tốc độ dựa trên IP cho người dùng chưa xác thực. Giám sát chi phí AWS hàng tuần để ngăn chặn vượt quá ngân sách.
 
 ---
 
 ## 8. Kết quả Dự kiến
 
-### Cải tiến Kỹ thuật
+### Tiêu chí Thành công Dự án
 
-- **Tìm kiếm Trò chuyện**: Hỗ trợ ngôn ngữ tự nhiên cho tiếng Việt và tiếng Anh với độ trễ <10s, powered by Bedrock LLMs.
+Để đảm bảo dự án MapVibe thành công, chúng tôi đặt ra các tiêu chí thành công cụ thể, có thể đo lường được như sau:
+
+- **Hoàn thành triển khai hạ tầng**: Triển khai thành công và an toàn toàn bộ kiến trúc hệ thống lên AWS, bao gồm các dịch vụ đã định sẵn như VPC, Subnet, RDS, Lambda, S3, CloudFront, API Gateway, và Cognito.
+- **Tính năng tìm kiếm cốt lõi hoạt động hiệu quả**: Tính năng tìm kiếm bằng ngôn ngữ tự nhiên sử dụng AWS Bedrock (mô hình Titan embedding, mô hình LLM Claude) và RDS PostgreSQL phải có khả năng hiểu và trả về kết quả phù hợp, có ý nghĩa cho ít nhất **90%** các câu truy vấn thông thường từ người dùng.
+- **Tối ưu chi phí**: Toàn bộ chi phí sử dụng dịch vụ AWS trong suốt quá trình phát triển và triển khai ban đầu không vượt quá 200 đô la tín dụng từ gói AWS Free Tier.
+- **Ra mắt sản phẩm (MVP)**: Hoàn thiện và cho ra mắt phiên bản sản phẩm khả dụng tối thiểu (MVP) của website MapVibe cho nhóm người dùng mục tiêu (GenZ) trên cả **desktop và nền tảng iOS, Android**. Ngoài ra, còn có **trang tổng quan (Dashboard) dành cho quản trị viên** để quản lý nội dung và người dùng.
+- **Thu thập phản hồi tích cực**: Sau khi ra mắt, thu thập được ít nhất 50 đề xuất địa điểm mới từ người dùng trong tháng đầu tiên, cho thấy sự tương tác và hưởng ứng của cộng đồng.
+
+### Cải tiến Kỹ thuật
+- **Tìm kiếm Trò chuyện dựa trên Tâm trạng**: Hỗ trợ ngôn ngữ tự nhiên cho tiếng Việt và tiếng Anh với độ trễ <10s, powered by Bedrock (mô hình Titan embedding và mô hình LLM Claude), hiểu được cảm xúc và tâm trạng của người dùng.
 - **Tóm tắt AI**: Tổng quan địa điểm được tạo bởi Bedrock, làm mới mỗi 7 ngày hoặc sau 10 đánh giá mới.
 - **Khả năng mở rộng**: Kiến trúc serverless với phân phối CDN toàn cầu qua CloudFront.
 - **Kiểm duyệt**: AI của Rekognition đảm bảo nội dung do người dùng tạo an toàn (đánh giá, ảnh).
+- **Cơ sở dữ liệu Quan hệ**: PostgreSQL với lập chỉ mục được tối ưu hóa cho hiệu suất truy vấn nhanh.
 
 ### Giá trị Dài hạn
-
-- **Cá nhân hóa**: Xếp hạng lại dựa trên ML và phân tích hành vi người dùng.
+- **Cá nhân hóa**: Xếp hạng lại dựa trên ML và phân tích hành vi người dùng dựa trên tâm trạng và sở thích.
 - **Hỗ trợ Ngoại tuyến**: PWA để liệt kê các địa điểm ngoại tuyến.
 - **Khả năng mở rộng**: Tiềm năng tích hợp với các hệ thống đặt phòng nội bộ.
-- **Mở rộng Ngữ cảnh**: Đề xuất dựa trên thời tiết, sự kiện hoặc xu hướng xã hội.
+- **Mở rộng Ngữ cảnh**: Đề xuất dựa trên thời tiết, sự kiện, xu hướng xã hội và cảm xúc người dùng.
 
 ---
 
 ### Tài liệu đính kèm / Tham khảo
+- [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=b574c31813807522d949cf5adca64b41612e12c7)
+- [GitLab Repository](https://gitlab.com/4n1d/mapvibe)
 
-- [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=12f225883db76aa012f87014f9994e8bcb304430)
-- [GitHub Repository](https://github.com/4N1D/aws-workshop)
+## 9. QUAN TRỌNG: Proposal bản docs
+- [Proposal Docs Version](https://docs.google.com/document/d/1-wM11mgTNaL8gvbMjAmukW9ZKzqGtHMp/edit)
+- [Related Documents](https://drive.google.com/drive/u/0/folders/1cdBYgwzBA4Vl9ww_fCPXmbsKToTKgH4L)
 
-## 9. QUAN TRỌNG: Đọc SRS để biết thêm về dự án của chúng tôi
-
-- [Software Requirement Specification](https://docs.google.com/document/d/16fEXJeQfbxF26TqigBDaBX5p0O-zkRW-sUpK6K31Ugs/edit?usp=sharing)
-- [Related Documents](https://drive.google.com/drive/folders/1LtBMw0791vFCO5fvBHdWg24JyUWVCEXF?usp=sharing)
