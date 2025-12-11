@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
-Phần này ghi lại tiến độ hàng tuần trong 12 tuần thực tập tại First Cloud Journey (FCJ). Mỗi tuần bao gồm mục tiêu, công việc đã hoàn thành và thành tựu đạt được.
+Phần này ghi lại tiến độ hàng tuần trong 14 tuần thực tập tại First Cloud Journey (FCJ). Mỗi tuần bao gồm mục tiêu, công việc đã hoàn thành và thành tựu đạt được.
 
 ---
 
@@ -45,3 +45,9 @@ Phần này ghi lại tiến độ hàng tuần trong 12 tuần thực tập t�
 
 **Tuần 12:** [AWS Migration & Monitoring](1.12-week12/)<br>
 *Labs 30-33: IAM Governance, VPC Flow Logs, Grafana, CloudWatch. Migrate RAG lên AWS với Terraform*
+
+**Tuần 13:** [Search, Detail & AI Summary](1.13-week13/)<br>
+*Hoàn thiện Search & Detail, AI Summary Review, Tích hợp hệ thống*
+
+**Tuần 14:** [Final Testing & Presentation](1.14-week14/)<br>
+*Kiểm thử hệ thống (UAT), Sửa lỗi, Viết tài liệu, Chuẩn bị báo cáo cuối kỳ*

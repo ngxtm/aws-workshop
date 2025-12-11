@@ -7,83 +7,21 @@ pre: " <b> 1.10 </b> "
 ---
 
 ### Week 10 Objectives:
-- Develop backend - Hybrid Search Engine (Text search + semantic search)
-- Practice Lab 22-25: Serverless, API Gateway, CI/CD, CloudWatch, X-Ray
-- Research and implement hybrid search for MapVibe
+- **MapVibe Project Kickoff**: Define requirements, system architecture
+- **Setup Development Environment**
+- **Initialize Source Code & Repository**
 
 ### Tasks to complete this week:
 
 | Day | Task | Start Date | Completion Date | References |
 |---|---|---|---|---|
-| 2 | - Team project meeting: Develop backend - Hybrid Search Engine<br>&emsp; + Research best practices, papers on hybrid search engine<br>&emsp; + Design preliminary architecture for hybrid search engine | 10/11/2025 | 10/11/2025 | [Hybrid Search Paper](https://arxiv.org/pdf/2408.09236) |
-| 3 | - Practice Lab 22: Serverless - Lambda interaction with S3 and DynamoDB<br>&emsp; + Process and Optimize Image Size on AWS<br>&emsp; + Create Lambda Function for Image Processing, S3 Bucket<br>&emsp; + Write data to Amazon DynamoDB | 11/11/2025 | 11/11/2025 | [Lab 22](https://000078.awsstudygroup.com/vi/) |
-| 4 | - Practice Lab 23: Serverless - Guide to writing Front-end calling API Gateway<br>&emsp; + Deploy Lambda function (write, read, delete data)<br>&emsp; + Setup API Gateway, create methods<br>&emsp; + Install and enable CORS<br>&emsp; + Test API with Postman and front-end | 12/11/2025 | 12/11/2025 | [Lab 23](https://000079.awsstudygroup.com/vi/) |
-| 5 | - Team project meeting: Develop backend - Hybrid Search Engine<br>&emsp; + Run and test hybrid search engine with collected data<br>&emsp; + Complete hybrid search engine architecture | 13/11/2025 | 13/11/2025 | [Supabase Hybrid Search](https://supabase.com/docs/guides/ai/hybrid-search) |
-| 6 | - Practice Lab 24: Serverless - CI/CD with CodePipeline<br>&emsp; + Create Git repo, SAM pipeline<br>&emsp; + Build pipeline for front-end<br>- Practice Lab 25: Serverless - Monitor with CloudWatch and X-Ray<br>&emsp; + Debug with CloudWatch Logs<br>&emsp; + Create custom metrics, CloudWatch Alarm<br>&emsp; + Trace with X-ray | 14/11/2025 | 14/11/2025 | [Lab 24](https://000084.awsstudygroup.com/vi/)<br>[Lab 25](https://000085.awsstudygroup.com/vi/) |
+| 2 | - **Project Kickoff**: Brainstorm ideas, finalize key features for MapVibe (AI-integrated Location Review)<br>- Task allocation | 10/11/2025 | 10/11/2025 | |
+| 3 | - **Database Design**: Design Schema for PostgreSQL (Users, Reviews, Places)<br>- **Tech Stack Selection**: Finalize Next.js (FE), Node.js/Python (BE), AWS (Infra) | 11/11/2025 | 11/11/2025 | |
+| 4 | - **Init Repository**: <br>&emsp; + Setup Monorepo with TurboRepo<br>&emsp; + Configure ESLint, Prettier, Husky (Git hooks)<br>&emsp; + First Commit (13/11) | 12/11/2025 | 13/11/2025 | [TurboRepo](https://turbo.build/) |
+| 5 | - **Backend Setup**: Scaffold Express/NestJS server<br>- **Frontend Setup**: Initialize Next.js project with Tailwind CSS | 14/11/2025 | 14/11/2025 | |
+| 6 | - **Research RAG**: Research Retrieval-Augmented Generation for AI Review feature<br>- Small POC (Proof of Concept) on vector database | 15/11/2025 | 15/11/2025 | |
 
 ### Week 10 Achievements:
-
-#### **Team Project - Hybrid Search Engine Development**
-- **Daily Meeting (4/11)**: Plan processing query feature
-  - Mục tiêu: Query phải xử lý được vị trí địa lý (Quận 1, gần tôi) + semantic meaning
-  - Concern: Độ chính xác của query results
-- **Research Phase**:
-  - Đọc paper về hybrid search: [Hybrid Search](https://arxiv.org/pdf/2408.09236)
-  - Tham khảo Supabase hybrid search implementation
-  - **Key insight**: Pure vector search miss keyword matches, pure text search miss semantic similar
-- **Architecture Design**:
-  ```
-  Query → [Text Search (BM25)] → Score A
-        → [Vector Search]      → Score B
-        → RRF Fusion           → Final Ranking
-  ```
-- **Implementation với PostgreSQL**:
-  - Full-text search: `to_tsvector('vietnamese', description) @@ plainto_tsquery('vietnamese', query)`
-  - Vector search: `embedding <-> query_embedding` với pgvector
-  - **RRF (Reciprocal Rank Fusion)**: `1/(k + rank_a) + 1/(k + rank_b)` với k=60
-  - Geospatial filter: `ST_DWithin(location, user_location, radius_meters)`
-- **Testing Results**:
-  - Query "quán cafe yên tĩnh quận 1" → Top 5 results relevant
-  - Query "chỗ ăn sáng gần đây ngon" → Results sorted by distance + rating
-  - **Performance**: <100ms cho 10k records với proper indexing
-
-#### **Lab 22: Serverless - Lambda + S3 + DynamoDB**
-- **Image Processing Pipeline**:
-  - S3 trigger Lambda khi upload image
-  - Lambda resize image (thumbnail, medium, large)
-  - Store metadata trong DynamoDB
-  - **Tip**: Set Lambda memory 1024MB+ cho image processing, CPU scales với memory
-- **DynamoDB Patterns**:
-  - Single-table design: PK = `PLACE#123`, SK = `REVIEW#456`
-  - GSI cho query by different access patterns
-  - **Gotcha**: DynamoDB scan = expensive, always use query với key conditions
-
-#### **Lab 23: API Gateway + Lambda**
-- **REST API Setup**:
-  - Lambda Proxy Integration: API Gateway pass entire request to Lambda
-  - Method: GET /places, POST /places, GET /places/{id}
-  - **CORS config**: Allow-Origin, Allow-Methods, Allow-Headers - quan trọng cho frontend!
-- **Testing Workflow**:
-  - Postman collection với environment variables
-  - Test từng endpoint trước khi integrate frontend
-  - **Tip**: Enable CloudWatch Logs cho API Gateway để debug integration issues
-
-#### **Lab 24 & 25: CI/CD + Monitoring**
-- **SAM Pipeline**:
-  - `sam init` → `sam build` → `sam deploy`
-  - Pipeline stages: Source → Build → Test → Deploy (Dev) → Approve → Deploy (Prod)
-  - **Benefit**: Infrastructure và application code cùng repo, deploy together
-- **CloudWatch Deep Dive**:
-  - **Logs Insights query**:
-    ```
-    fields @timestamp, @message
-    | filter @message like /ERROR/
-    | sort @timestamp desc
-    | limit 20
-    ```
-  - **Custom Metrics**: `put-metric-data` cho business metrics (orders/minute, search latency)
-  - **Alarms**: Lambda errors > 5 trong 5 phút → SNS notification
-- **X-Ray Tracing**:
-  - Visualize request flow: API Gateway → Lambda → DynamoDB
-  - Identify bottlenecks: Thấy DynamoDB query slow → Add GSI
-  - **Service Map**: Overview toàn bộ architecture, dependencies
+- **Project Structure**: Completed standard Monorepo structure setup, ready for parallel development (FE/BE).
+- **Git Workflow**: Established Commit conventions, Branching model (Gitflow).
+- **Architecture**: Created High-level architecture diagram to visualize data flow.

@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
-This section documents my weekly progress during the 12-week internship at First Cloud Journey (FCJ). Each week includes objectives, tasks completed, and achievements gained.
+This section documents my weekly progress during the 14-week internship at First Cloud Journey (FCJ). Each week includes objectives, tasks completed, and achievements gained.
 
 ---
 
@@ -45,3 +45,9 @@ This section documents my weekly progress during the 12-week internship at First
 
 **Week 12:** [AWS Migration & Monitoring](1.12-week12/)<br>
 *Labs 30-33: IAM Governance, VPC Flow Logs, Grafana, CloudWatch. RAG migration to AWS with Terraform*
+
+**Week 13:** [Search, Detail & AI Summary](1.13-week13/)<br>
+*Implement Search & Detail features, AI Summary Review, System Integration*
+
+**Week 14:** [Final Testing & Presentation](1.14-week14/)<br>
+*System Testing (UAT), Bug Fixing, Documentation, Final Presentation Prep*
